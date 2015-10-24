@@ -2,7 +2,7 @@ $LOAD_PATH.push File.expand_path('../lib', __FILE__)
 require 'kandianying/version'
 
 Gem::Specification.new do |s|
-  s.name        =  'kan_dian_ying'
+  s.name        =  'kandianying'
   s.version     =  KanDianYing::VERSION
   s.date        =  KanDianYing::DATE
   s.executables << 'kandianying'
