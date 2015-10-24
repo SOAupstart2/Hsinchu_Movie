@@ -2,4 +2,4 @@
 require_relative '../lib/kandianying'
 
 movie = HsinChuMovie.new(ARGV[0].to_s)
-movie.movie_table_output
+puts movie.movie_table_output
