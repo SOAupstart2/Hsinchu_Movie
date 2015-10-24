@@ -1,2 +1,5 @@
 #!/usr/bin/env ruby
 require_relative '../lib/kandianying'
+
+movie = HsinChuMovie.new
+movie.movie_table_output
