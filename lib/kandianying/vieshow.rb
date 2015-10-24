@@ -24,6 +24,7 @@ module VieShow
     @table.each do |td|
       current_movie = movie_conditions(td, current_movie)
     end
+    @movie_table.each {|k,v| movie_table[k]= v.to_h}
   end
 
   # make make_movie_table simple
