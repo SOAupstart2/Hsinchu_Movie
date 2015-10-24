@@ -5,6 +5,6 @@ class HsinChuMovie
   include VieShow
 
   def movie_table_output
-    puts to_json
+    to_json
   end
 end
