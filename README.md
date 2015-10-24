@@ -1,6 +1,6 @@
-# Hsinchu_Movie
+# Hsinchu_Movie[![Gem Version](https://badge.fury.io/rb/kandianying.svg)](https://badge.fury.io/rb/kandianying)
 
-https://rubygems.org/gems/kan_dian_ying
+https://rubygems.org/gems/kandianying
 
 A simple Ruby Gem to scrap the website vieshow and to get film list and its dates and time.
 
@@ -17,7 +17,8 @@ gem install kandianying
 ```
 kandianying (0005|0012)  
 ```
-# Puts JSON array of vieshow's films to command line, 0005 is for VS Cinemas Hsinchu FE21 and 0012 is id for Vie Show Cinemas Hsinchu Big City
+
+Puts JSON array of vieshow's films to command line, 0005 is for VS Cinemas Hsinchu FE21 and 0012 is id for Vie Show Cinemas Hsinchu Big City
 
 ### Usage in ruby code
 ```
