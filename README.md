@@ -15,17 +15,18 @@ gem install kandianying
 ### Command line usage
 
 ```
-kandianying 0005  # Puts JSON array of vieshow's films to command line
+kandianying (0005|0012)  
 ```
+# Puts JSON array of vieshow's films to command line, 0005 is for VS Cinemas Hsinchu FE21 and 0012 is id for Vie Show Cinemas Hsinchu Big City
 
 ### Usage in ruby code
 ```
-require 'soa_codeschool'
+require 'kandianying'
 
-code_school = SiteScraper.new
-code_school.course_names  # Returns array of course names
-code_school.code_school_data  # Returns JSON array of code school courses and teachers
-code_school.code_school_output  # Puts JSON array of code school courses and teachers
+vieshow_movie = HsinChuMovie.new('0005')
+vieshow_movie.movie_name  # Returns array of film names
+vieshow_movie.movie_table  # Returns JSON array of film names, dates, time 
+vieshow_movie.to_json  # Puts JSON array of movie_table
 ```
 
 ## License
