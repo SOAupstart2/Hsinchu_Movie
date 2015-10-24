@@ -6,13 +6,15 @@ require 'json'
 module VieShow
   # initialize movie_table with url
   def initialize(visCinemaID)
-    url = 'http://sales.vscinemas.com.tw/ticketing/visPrintShowTimes.aspx?visCinemaID=' + visCinemaID
+    url = 'http://sales.vscinemas.com.tw/ticketing/visPrintShowTimes.aspx?'\
+          'visCinemaID=' + visCinemaID
     open_doc = open(url, 'Cookie' => 'AspxAutoDetectCookieSupport=1')
     doc = Nokogiri::HTML(open_doc)
-    @table = doc.xpath("//*[@class='PrintShowTimesTable']//td[@class='PrintShowTimesFilm' "\
+    @table = doc.xpath("//*[@class='PrintShowTimesTable']//td"\
+                       "[@class='PrintShowTimesFilm' "\
                        "or @class='PrintShowTimesDay' "\
                        "or @class='PrintShowTimesSession']")
-    @movie_table = {}
+    @movie_table = Hash.new { |hash, key| hash[key] = [] }
     make_movie_table
   end
 
@@ -20,21 +22,31 @@ module VieShow
   def make_movie_table
     current_movie = ''
     @table.each do |td|
-      case td.first[1]
-      when 'PrintShowTimesFilm'
-        @movie_table[td.text] = []
-        current_movie = td.text
-      when 'PrintShowTimesDay'
-        @movie_table[current_movie] << [td.text]
-      when 'PrintShowTimesSession'
-        @movie_table[current_movie][-1] << td.text
-      end
+      current_movie = movie_conditions(td, current_movie)
     end
   end
 
+  # make make_movie_table simple
+  def movie_conditions(td, current_movie)
+    case td.first[1]
+    when 'PrintShowTimesFilm'
+      current_movie = td.text
+    when 'PrintShowTimesDay'
+      @movie_table[current_movie] << [td.text]
+    when 'PrintShowTimesSession'
+      @movie_table[current_movie][-1] << td.text
+    end
+    current_movie
+  end
+
   # get all movies' names
-  def make_movie_name
+  def movie_name
     @movie_table.keys
+  end
+
+  # fetch movie_table
+  def movie_table
+    @movie_table
   end
 
   # get json format from movie_table
