@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+require_relative '../lib/scrape'
+
+movie = SiteScraper.new
+movie.movie_table_output
