@@ -4,6 +4,7 @@ require 'json'
 
 # Scraper for VieShow
 module VieShow
+  VIESHOW_MAPPING = {'0005'=>'Vieshow_HsinChuFE21', '0012'=>'Vieshow_BigCity'} 
   VIESHOW_URL = 'http://sales.vscinemas.com.tw/ticketing/visPrintShowTimes'\
                 '.aspx?visCinemaID='
   VIESHOW_COOKIE_SETTINGS = 'AspxAutoDetectCookieSupport=1'
@@ -26,6 +27,7 @@ module VieShow
       @table = doc.xpath(VIESHOW_FULL_XPATH)
       @movie_table = Hash.new { |hash, key| hash[key] = [] }
       make_movie_table
+      @movie_table = { VIESHOW_MAPPING[visCinemaID] => @movie_table }
     end
 
     # fetch movie_table

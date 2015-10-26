@@ -2,10 +2,12 @@
 require_relative '../lib/kandianying'
 
 if ARGV[0] == 'vieshow'
-	theater = HsinChuMovie::Vieshow.new(ARGV[1].to_s)
-	theater.movie_table.each do |movie,time| 
-		puts movie
-		time.each { |k,v| puts k+"\t"+v }
-		puts
-	end
+  cinema = HsinChuMovie::Vieshow.new(ARGV[1].to_s)
+  cinema.movie_table.each do |cinema,movies| 
+    puts cinema
+    movies.each do |movie,times|
+      puts movie
+      times.each {|k,v| puts k+"\t"+v}
+    end
+  end
 end
