@@ -1,5 +1,11 @@
 #!/usr/bin/env ruby
 require_relative '../lib/kandianying'
 
-movie = HsinChuMovie.new(ARGV[0].to_s)
-puts movie.movie_table_output
+if ARGV[0] == 'vieshow'
+	theater = HsinChuMovie::Vieshow.new(ARGV[1].to_s)
+	theater.movie_table.each do |movie,time| 
+		puts movie
+		time.each { |k,v| puts k+"\t"+v }
+		puts
+	end
+end
