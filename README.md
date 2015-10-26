@@ -15,12 +15,13 @@ gem install kandianying
 ### Command line usage
 
 ```
-kandianying (0005|0012)  
+kandianying theater id
 ```
 
-Puts JSON array of vieshow's films to command line,
-- 0005 is for VS Cinemas Hsinchu FE21  
-- 0012 is for Vie Show Cinemas Hsinchu Big City
+Puts information of films to command line,
+- vieshow
+  - 0005 is for VS Cinemas Hsinchu FE21  
+  - 0012 is for Vie Show Cinemas Hsinchu Big City
 
 ### Usage in ruby code
 ```
