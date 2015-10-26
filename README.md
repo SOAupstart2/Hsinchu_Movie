@@ -18,7 +18,7 @@ gem install kandianying
 kandianying (0005|0012)  
 ```
 
-Puts JSON array of vieshow's films to command line, 
+Puts JSON array of vieshow's films to command line,
 - 0005 is for VS Cinemas Hsinchu FE21  
 - 0012 is for Vie Show Cinemas Hsinchu Big City
 
@@ -26,9 +26,9 @@ Puts JSON array of vieshow's films to command line,
 ```
 require 'kandianying'
 
-vieshow_movie = HsinChuMovie.new('0005')
-vieshow_movie.movie_name  # Returns array of film names
-vieshow_movie.movie_table  # Returns JSON array of film names, dates, time 
+vieshow_movie = HsinChuMovie::Vieshow.new('0005')
+vieshow_movie.movie_names  # Returns array of film names
+vieshow_movie.movie_table  # Returns JSON array of film names, dates, time
 vieshow_movie.to_json  # Puts JSON array of movie_table
 ```
 
