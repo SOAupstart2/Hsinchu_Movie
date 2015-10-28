@@ -1,8 +1,6 @@
 language: ruby
 rvm:
- - ruby-head
  - "2.2.3"
  - "2.1.0"
- - jruby-head
 # uncomment this line if your project needs to run something other than `rake`:
 # script: bundle exec rspec spec
