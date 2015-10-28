@@ -4,9 +4,8 @@ require 'json'
 
 # Scraper for VieShow
 module VieShow
-  VIESHOW_MAPPING = {'0005'=>'Vieshow_HsinChuFE21', '0012'=>'Vieshow_BigCity'} 
   VIESHOW_URL = 'http://sales.vscinemas.com.tw/ticketing/visPrintShowTimes'\
-                '.aspx?visCinemaID='
+                '.aspx?visCinemaID=00'
   VIESHOW_COOKIE_SETTINGS = 'AspxAutoDetectCookieSupport=1'
   VIESHOW_BASE_XPATH = 'PrintShowTimes'
   VIESHOW_CLASSES_XPATH = %w(Film Day Session)
@@ -18,23 +17,28 @@ module VieShow
   VIESHOW_CINEMA_CODES = ('1'..'14').to_a.map do |e|
     e.length == 1 ? "0#{e}" : e
   end
+  VIESHOW_CINEMA_NAME_XPATH = "//*[contains(@class, 'PrintCinemaName')]"
 
   # Class for Vieshow films
   class Vieshow
     # initialize movie_table with ID
-    def initialize(visCinemaID)
-      doc = visit_vieshow(visCinemaID)
+    def initialize(vis_cinema_id)
+      vis_cinema_id = vis_cinema_id.to_s
+      vis_cinema_id = "0#{vis_cinema_id}" if vis_cinema_id.length == 1
+      fail unless VIESHOW_CINEMA_CODES.include? vis_cinema_id
+      doc = visit_vieshow(vis_cinema_id)
       @table = doc.xpath(VIESHOW_FULL_XPATH)
+      @cinema_name = doc.xpath(VIESHOW_CINEMA_NAME_XPATH).text
       @movie_table = Hash.new { |hash, key| hash[key] = [] }
       make_movie_table
-      @movie_table = { VIESHOW_MAPPING[visCinemaID] => @movie_table }
+      @movie_table = { @cinema_name => @movie_table }
     end
 
     # fetch movie_table
-    attr_reader :movie_table
+    attr_reader :movie_table, :cinema_name
 
-    def visit_vieshow(visCinemaID)
-      url = VIESHOW_URL + visCinemaID
+    def visit_vieshow(vis_cinema_id)
+      url = VIESHOW_URL + vis_cinema_id
       open_doc = open(url, 'Cookie' => VIESHOW_COOKIE_SETTINGS)
       Nokogiri::HTML(open_doc)
     end
