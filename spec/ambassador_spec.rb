@@ -1,16 +1,16 @@
 require './spec/support/vcr_setup'
 
-TEST_SITES = %w(38897fa9-094f-4e63-9d6d-c52408438cb6)
+AMBASSADOR_TEST_SITES = %w(38897fa9-094f-4e63-9d6d-c52408438cb6)
 # FAIL_SITES = %w(0 16)
-FIXTURES = './spec/fixtures/ambassador_'
+AMBASSADOR_FIXTURES = './spec/fixtures/ambassador_'
 
 describe 'Get film information' do
-  TEST_SITES.each do |site|
+  AMBASSADOR_TEST_SITES.each do |site|
     it "must return same list of movies for #{site}" do
       VCR.use_cassette("ambassador_name_#{site}") do
         cinema = HsinChuMovie::Ambassador.new
         name = cinema.theater_id_table[site]
-        site_names = yml_load("#{FIXTURES}name_#{site}.yml")
+        site_names = yml_load("#{AMBASSADOR_FIXTURES}name_#{site}.yml")
         site_names.must_equal cinema.movie_table[name].keys
       end
     end
@@ -19,7 +19,7 @@ describe 'Get film information' do
       VCR.use_cassette("ambassador_table_#{site}") do
         cinema = HsinChuMovie::Ambassador.new
         name = cinema.theater_id_table[site]
-        site_table = yml_load("#{FIXTURES}table_#{site}.yml")
+        site_table = yml_load("#{AMBASSADOR_FIXTURES}table_#{site}.yml")
         site_table.must_equal cinema.movie_table[name]
       end
     end
