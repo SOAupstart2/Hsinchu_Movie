@@ -10,7 +10,7 @@ gem 'yaml'
 group :test do
   gem 'rake'
   gem 'vcr'
-  gem 'webmock/minitest'
-  gem 'minitest/autorun'
-  gem 'minitest/rg'
+  gem 'webmock'
+  gem 'minitest'
+  gem 'minitest-rg'
 end
