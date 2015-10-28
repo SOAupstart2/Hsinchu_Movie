@@ -1,37 +1,34 @@
-# Hsinchu_Movie[![Gem Version](https://badge.fury.io/rb/kandianying.svg)](https://badge.fury.io/rb/kandianying)
+# Hsinchu_Movie[![Gem Version](https://badge.fury.io/rb/kandianying.svg)](https://badge.fury.io/rb/kandianying)[![Build Status](https://travis-ci.org/SOAupstart2/Hsinchu_Movie.svg)](https://travis-ci.org/SOAupstart2/Hsinchu_Movie)
 
 https://rubygems.org/gems/kandianying
 
-A simple Ruby Gem to scrap the website vieshow and to get film list and its dates and time.
+A simple Ruby Gem to get data from cinema websites in Hsinchu. Currently, we can get the film lists and show times given a vieshow cinema code.
 
-
-## Usage
+## Installation
 
 Run the following command:
-
 ```
 gem install kandianying
 ```
+
+### General usage notes
+Currently, usage requires specifying a theater_id. This value ranges from 1 to 14. For a cinema located in Hsinchu, use 5 or 12.
+
 ### Command line usage
-
 ```
-kandianying (0005|0012)  
+kandianying vieshow <theater_id>
+# This prints out cinema name with films on display and show times.
 ```
-
-Puts JSON array of vieshow's films to command line, 
-- 0005 is for VS Cinemas Hsinchu FE21  
-- 0012 is for Vie Show Cinemas Hsinchu Big City
 
 ### Usage in ruby code
 ```
 require 'kandianying'
 
-vieshow_movie = HsinChuMovie.new('0005')
-vieshow_movie.movie_name  # Returns array of film names
-vieshow_movie.movie_table  # Returns JSON array of film names, dates, time 
+vieshow_movie = HsinChuMovie::Vieshow.new(<theater_id>)
+vieshow_movie.movie_names  # Returns array of film names
+vieshow_movie.movie_table  # Returns JSON array of film names, dates, time
 vieshow_movie.to_json  # Puts JSON array of movie_table
 ```
 
 ## License
-
 Distributed under the [MIT License](LICENSE).

@@ -1,5 +1,19 @@
 #!/usr/bin/env ruby
 require_relative '../lib/kandianying'
+VIESHOW_CODES = ('1'..'14').to_a.map { |e| e.length == 1 ? "0#{e}" : e }
 
-movie = HsinChuMovie.new(ARGV[0].to_s)
-puts movie.movie_table_output
+if ARGV[0] == 'vieshow'
+  ARGV[1] = "0#{ARGV[1]}" if ARGV[1].length == 1
+  if VIESHOW_CODES.include? ARGV[1]
+    cinema = HsinChuMovie::Vieshow.new(ARGV[1])
+    puts cinema.cinema_name
+    cinema.movie_table.each do |_, movies|
+      movies.each do |movie, times|
+        puts movie
+        times.each { |k, v| puts k + "\t" + v }
+      end
+    end
+  else
+    puts 'Please use a cinema code between \'1\' and \'14\''
+  end
+end
