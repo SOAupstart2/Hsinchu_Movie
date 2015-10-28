@@ -1,5 +1,16 @@
 source 'https://www.rubygems.org'
 
-ruby '2.2.1'
-
 gemspec
+
+gem 'nokogiri'
+gem 'open-uri'
+gem 'json'
+gem 'yaml'  
+
+group :test do
+  gem 'rake'
+  gem 'vcr'
+  gem 'webmock/minitest'
+  gem 'minitest/autorun'
+  gem 'minitest/rg'
+end
