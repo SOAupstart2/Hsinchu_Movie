@@ -1,4 +1,4 @@
-# Hsinchu_Movie[![Gem Version](https://badge.fury.io/rb/kandianying.svg)](https://badge.fury.io/rb/kandianying)
+# Hsinchu_Movie[![Gem Version](https://badge.fury.io/rb/kandianying.svg)](https://badge.fury.io/rb/kandianying)[![Build Status](https://travis-ci.org/SOAupstart2/Hsinchu_Movie.svg)](https://travis-ci.org/SOAupstart2/Hsinchu_Movie)
 
 https://rubygems.org/gems/kandianying
 
