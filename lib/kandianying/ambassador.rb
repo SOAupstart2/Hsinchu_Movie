@@ -26,7 +26,7 @@ module Ambassador
       movie_info = Hash.new { |h, k| h[k] = {} }
       date_list.each do |date|
         ur = "#{AMBASSADOR_FILM_API}theaterId=#{theater_id}&showingDate=#{date}"
-        movies = JSON.parse(Nokogiri::HTML(open(ur)).text.gsub('\"', '"'))
+        movies = JSON.parse(Nokogiri::HTML(open(ur)).text)
         movies.each do |movie|
           name = movie['ForeignName']
           time = movie['PeriodShowtime'].first['Showtimes']
@@ -38,7 +38,7 @@ module Ambassador
 
     def fetch_theater_date(theater_id)
       url = "#{AMBASSADOR_TIME_API}theaterId=#{theater_id}"
-      JSON.parse(Nokogiri::HTML(open(url)).text.gsub('\"', '"'))
+      JSON.parse(Nokogiri::HTML(open(url)).text)
     end
 
     def fetch_theater_id_table(url)
