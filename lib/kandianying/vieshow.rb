@@ -67,7 +67,7 @@ module VieShow
 
     # get all movies' names
     def movie_names
-      @movie_table.keys
+      @movie_table.values[0].keys
     end
 
     # get json format from movie_table

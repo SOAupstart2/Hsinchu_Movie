@@ -1,29 +1,33 @@
-require 'minitest/autorun'
-require 'minitest/rg'
-require 'json'
-require 'vcr'
-require 'webmock/minitest'
-
-require './lib/kandianying'
 require './spec/support/vcr_setup'
 
-file_0005 = JSON.parse(File.read('./spec/fixtures/vieshow_0005.json'))
-file_0012 = JSON.parse(File.read('./spec/fixtures/vieshow_0012.json'))
+TEST_SITES = %w(05 12)
+FAIL_SITES = %w(0 16)
+FIXTURES = './spec/fixtures/vieshow_'
 
-VCR.use_cassette('vieshow') do
-  scrape_0005 = HsinChuMovie::Vieshow.new(5).movie_table
-  scrape_0012 = HsinChuMovie::Vieshow.new(12).movie_table
-
-  describe 'Check for difference between returned results and actual data and'\
-           ' possibly HTML structure changes' do
-    it 'have same number of movies' do
-      file_0005.size.must_equal scrape_0005.size
-      file_0012.size.must_equal scrape_0012.size
+describe 'Get film information' do
+  TEST_SITES.each do |site|
+    it "must return same list of movies for #{site}" do
+      VCR.use_cassette("vieshow_name_#{site}") do
+        cinema = HsinChuMovie::Vieshow.new(site.to_i)
+        site_names = yml_load("#{FIXTURES}name_#{site}.yml")
+        site_names.must_equal cinema.movie_names
+      end
     end
 
-    it 'must be same' do
-      file_0005.must_equal scrape_0005
-      file_0012.must_equal scrape_0012
+    it "must return same table for #{site}" do
+      VCR.use_cassette("vieshow_table_#{site}") do
+        cinema = HsinChuMovie::Vieshow.new(site.to_i)
+        site_table = yml_load("#{FIXTURES}table_#{site}.yml")
+        site_table.must_equal cinema.movie_table
+      end
+    end
+  end
+end
+
+describe 'Outside of 1 and 14 must fail' do
+  FAIL_SITES.each do |site|
+    it "must fail for #{site}" do
+      # HsinChuMovie::Vieshow.new(site.to_i).must_fail
     end
   end
 end
