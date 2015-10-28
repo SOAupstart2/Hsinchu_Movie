@@ -1,6 +1,7 @@
 require 'open-uri'
 require 'nokogiri'
 require 'json'
+require 'yaml'
 
 # Scraper for Ambassador
 module Ambassador
@@ -54,6 +55,10 @@ module Ambassador
 
     def to_json
       @movie_table.to_json
+    end
+
+    def to_yaml
+      @movie_table.yaml
     end
   end
 end
