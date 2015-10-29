@@ -18,6 +18,7 @@ module VieShow
     e.length == 1 ? "0#{e}" : e
   end
   VIESHOW_CINEMA_NAME_XPATH = "//*[contains(@class, 'PrintCinemaName')]"
+  INITIALIZE_ERROR = 'id out of range'
 
   # Class for Vieshow films
   class Vieshow
@@ -25,7 +26,7 @@ module VieShow
     def initialize(vis_cinema_id)
       vis_cinema_id = vis_cinema_id.to_s
       vis_cinema_id = "0#{vis_cinema_id}" if vis_cinema_id.length == 1
-      fail unless VIESHOW_CINEMA_CODES.include? vis_cinema_id
+      fail INITIALIZE_ERROR unless VIESHOW_CINEMA_CODES.include? vis_cinema_id
       doc = visit_vieshow(vis_cinema_id)
       @table = doc.xpath(VIESHOW_FULL_XPATH)
       @cinema_name = doc.xpath(VIESHOW_CINEMA_NAME_XPATH).text
