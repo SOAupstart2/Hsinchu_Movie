@@ -2,32 +2,28 @@ require './spec/support/vcr_setup'
 
 TEST_SITES = %w(05 12)
 FAIL_SITES = %w(0 16)
+TEST_INFO = %w(name table)
 FIXTURES = './spec/fixtures/vieshow_'
 
 describe 'Get film information' do
   TEST_SITES.each do |site|
-    it "must return same list of movies for #{site}" do
-      VCR.use_cassette("vieshow_name_#{site}") do
-        cinema = HsinChuMovie::Vieshow.new(site.to_i)
-        site_names = yml_load("#{FIXTURES}name_#{site}.yml")
-        site_names.must_equal cinema.movie_names
-      end
-    end
-
-    it "must return same table for #{site}" do
-      VCR.use_cassette("vieshow_table_#{site}") do
-        cinema = HsinChuMovie::Vieshow.new(site.to_i)
-        site_table = yml_load("#{FIXTURES}table_#{site}.yml")
-        site_table.must_equal cinema.movie_table
+    TEST_INFO.each do |t|
+      it "must return same list of movies for #{site}" do
+        VCR.use_cassette("vieshow_#{t}_#{site}") do
+          cinema = HsinChuMovie::Vieshow.new(site.to_i)
+          site_info = yml_load("#{FIXTURES}#{t}_#{site}.yml")
+          compare = t == TEST_INFO[0] ? cinema.movie_names : cinema.movie_table
+          site_info.must_equal compare
+        end
       end
     end
   end
 end
 
 describe 'Outside of 1 and 14 must fail' do
-  FAIL_SITES.each do |site|
-    it "must fail for #{site}" do
-      # HsinChuMovie::Vieshow.new(site.to_i).must_fail
-    end
-  end
+  # FAIL_SITES.each do |site|
+  #   it "must fail for #{site}" do
+  #     # HsinChuMovie::Vieshow.new(site.to_i).must_fail
+  #   end
+  # end
 end
