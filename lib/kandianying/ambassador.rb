@@ -58,7 +58,7 @@ module Ambassador
     end
 
     def to_yaml
-      @movie_table.yaml
+      @movie_table.to_yaml
     end
   end
 end
