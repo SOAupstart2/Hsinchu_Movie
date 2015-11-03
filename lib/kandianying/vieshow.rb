@@ -2,6 +2,7 @@ require 'open-uri'
 require 'nokogiri'
 require 'json'
 require_relative './vieshow_scrape'
+require_relative './vieshow_search'
 
 # Scraper for VieShow
 module VieShow
@@ -9,7 +10,7 @@ module VieShow
 
   # Class for Vieshow films
   class Vieshow
-    include VieshowScrape
+    include VieshowScrape, VieshowSearch
     # initialize movie_table with ID
     def initialize(vis_cinema_id)
       vis_cinema_id = vis_cinema_id.to_s

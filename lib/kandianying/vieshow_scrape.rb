@@ -1,7 +1,9 @@
-# Helper module to scrape
+# Helper module to scrape Vieshow
 module VieshowScrape
   VIESHOW_URL = 'http://sales.vscinemas.com.tw/ticketing/visPrintShowTimes'\
                 '.aspx?visCinemaID=00'
+  LANGUAGE_PARAM = '&visLang='
+  LANGUAGES = %w(1, 2)
   VIESHOW_COOKIE_SETTINGS = 'AspxAutoDetectCookieSupport=1'
   VIESHOW_BASE_XPATH = 'PrintShowTimes'
   VIESHOW_CLASSES_XPATH = %w(Film Day Session)
@@ -16,6 +18,8 @@ module VieshowScrape
   VIESHOW_CINEMA_NAME_XPATH = "//*[contains(@class, 'PrintCinemaName')]"
 
   def visit_vieshow(vis_cinema_id)
+    # Include langauge settings in morning when film data is stable.
+    # Add an extra parameter to this method
     url = VIESHOW_URL + vis_cinema_id
     open_doc = open(url, 'Cookie' => VIESHOW_COOKIE_SETTINGS)
     Nokogiri::HTML(open_doc)
