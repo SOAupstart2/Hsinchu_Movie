@@ -42,7 +42,7 @@ module VieshowScrape
     when 'PrintShowTimesDay'
       @movie_table[current_movie] << [td.text]
     when 'PrintShowTimesSession'
-      @movie_table[current_movie][-1] << td.text
+      @movie_table[current_movie][-1] << td.text.split(', ')
     end
     current_movie
   end

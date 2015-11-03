@@ -20,6 +20,17 @@ describe 'Get film information' do
   end
 end
 
+describe 'Get show times for a film' do
+  # TODO: it 'should pass' do; use value from film list
+  # TODO: it 'should fail' do; use random value of considerable length
+end
+
+describe 'Get films after a given time on given day' do
+  # TODO: it 'should pass' do; generate random time;
+  #       use DateTime to compare each returned time
+  #       against hour earlier than stipulated.
+end
+
 describe 'Outside of 1 and 14 must fail' do
   # FAIL_SITES.each do |site|
   #   it "must fail for #{site}" do
