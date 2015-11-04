@@ -26,8 +26,18 @@ require 'kandianying'
 
 vieshow_movie = HsinChuMovie::Vieshow.new(<theater_id>)
 vieshow_movie.movie_names  # Returns array of film names
-vieshow_movie.movie_table  # Returns JSON array of film names, dates, time
-vieshow_movie.to_json  # Puts JSON array of movie_table
+vieshow_movie.movie_table  # Returns Hash containing film names, dates, times
+vieshow_movie.to_json  # Returns JSON array of movie_table
+
+# <film_name> is a string that is any part of the name of film.
+vieshow_movie.film_times(film_name)
+# Returns Hash containing film viewing dates and times.
+
+# <date_time> is string of the type 'MONTH DATE TIME' such as 'November 5 22:00'.
+# Abbreviations such as 'Nov 5 22:00' would suffice.
+# If the date is the same as the query date, you can simply use the time '22:00'
+vieshow_movie.films_after_time(date_time)
+# Returns hash containing films on display after given time with start times
 ```
 
 ## License
