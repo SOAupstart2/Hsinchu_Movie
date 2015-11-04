@@ -10,8 +10,11 @@ module VieshowSearch
     movie_names.select { |name| name if name.downcase.include? film_name }
   end
 
-  def film_times(film_name)
-    find_film(film_name).map { |film| { film => movie_table.values[0][film] } }
+  def film_times(film_name, temp_table = {})
+    find_film(film_name).each do |film|
+      temp_table[film] = movie_table.values[0][film]
+    end
+    temp_table
   end
 
   def films_on_day(datetime, temp_table = {})
