@@ -10,6 +10,7 @@ PARTIAL_NAME = 4..10
 HOUR_MIN = 11..15
 AN_HOUR = 1 / 24.to_f
 MIDNIGHT = %w(00 01 02 03)
+TAIWAN_TIME = '+8'.to_f
 
 describe 'Get film information' do
   TEST_SITES.each do |site|
@@ -55,7 +56,7 @@ describe 'Get films after a given time on given day' do
     TEST_SITES.each do |site|
       VCR.use_cassette("vieshow_table_#{site}") do
         cinema = HsinChuMovie::Vieshow.new(site.to_i)
-        time = DateTime.now
+        time = DateTime.now TAIWAN_TIME
         time_s = time.to_s[HOUR_MIN]
         after_films = cinema.films_after_time(time_s)
         exit if after_films.empty?
@@ -71,6 +72,9 @@ describe 'Get films after a given time on given day' do
               end
               show_time.must_be :>=, comparison_time
             end; end; end; end; end
+  end
+  it 'should not miss any films' do
+    # TODO: Check to make sure no late films are missed
   end
 end
 

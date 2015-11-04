@@ -29,10 +29,10 @@ module VieshowSearch
     temp_table
   end
 
-  def time_after(times, time_preferrence)
+  def time_after(date, times, time_preferrence)
     times.select do |time|
       time if (MIDNIGHT.include? time[0..1]) ||
-              (DateTime.parse("#{time}#{TIMEZONE}") >= time_preferrence)
+              (DateTime.parse("#{date}#{time}#{TIMEZONE}") >= time_preferrence)
     end
   end
 
@@ -40,7 +40,7 @@ module VieshowSearch
     search_datetime = DateTime.parse("#{datetime}#{TIMEZONE}") - AN_HOUR
     films_on_day(datetime).each do |name, date_time|
       date_time.each do |date, times|
-        time_array = time_after(times, search_datetime)
+        time_array = time_after(date, times, search_datetime)
         temp_table[name] = { date => time_array } unless time_array.empty?
       end
     end
