@@ -10,7 +10,7 @@ PARTIAL_NAME = 4..10
 HOUR_MIN = 11..15
 AN_HOUR = 1 / 24.to_f
 MIDNIGHT = %w(00 01 02 03)
-TAIWAN_TIME = '+8'.to_f
+TAIWAN_TIME = '+8'
 GIVEN_DAY = (0..2).to_a
 
 describe 'Get film information' do
@@ -57,7 +57,7 @@ describe 'Get films after a given time on given day' do
     it "should only return films after a time for #{site}" do
       VCR.use_cassette("vieshow_table_#{site}") do
         cinema = HsinChuMovie::Vieshow.new(site.to_i)
-        time = DateTime.now TAIWAN_TIME
+        time = DateTime.now.new_offset(TAIWAN_TIME)
         time += GIVEN_DAY.sample
         time_s = time.to_s
         day_films = cinema.films_on_day(time_s)
