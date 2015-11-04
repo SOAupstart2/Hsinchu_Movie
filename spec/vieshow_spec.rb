@@ -12,6 +12,10 @@ AN_HOUR = 1 / 24.to_f
 MIDNIGHT = %w(00 01 02 03)
 TAIWAN_TIME = '+8'
 GIVEN_DAY = (0..2).to_a
+A_TO_Z = 'A'..'Z'
+MAX_ALPHABET = 26
+HOUR_PART = 0..1
+ADD_24 = 24
 
 describe 'Get film information' do
   TEST_SITES.each do |site|
@@ -46,7 +50,7 @@ describe 'Get show times for a film' do
     it 'should return empty array for random string' do
       VCR.use_cassette("vieshow_table_#{site}") do
         cinema = HsinChuMovie::Vieshow.new(site.to_i)
-        one_movie = (PARTIAL_NAME).map { ('A'..'Z').to_a[rand(26)] }.join
+        one_movie = (PARTIAL_NAME).map { A_TO_Z.to_a[rand(MAX_ALPHABET)] }.join
         cinema.film_times(one_movie).must_be_empty
       end; end
   end
@@ -78,9 +82,9 @@ describe 'Get films after a given time on given day' do
                 show_times.must_include ast
                 # After show times must be greater than comparison time
                 if (ast < comparison_time) &&
-                   (MIDNIGHT.include? ast[0..1])
+                   (MIDNIGHT.include? ast[HOUR_PART])
                   # Movies airing from midnight onwards are group with past day
-                  ast[0..1] = "#{ast[0..1].to_i + 24}"
+                  ast[HOUR_PART] = "#{ast[HOUR_PART].to_i + ADD_24}"
                 end
                 ast.must_be :>=, comparison_time
               end
