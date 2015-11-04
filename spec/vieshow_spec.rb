@@ -55,9 +55,9 @@ describe 'Get films after a given time on given day' do
 end
 
 describe 'Outside of 1 and 14 must fail' do
-  # FAIL_SITES.each do |site|
-  #   it "must fail for #{site}" do
-  #     # HsinChuMovie::Vieshow.new(site.to_i).must_fail
-  #   end
-  # end
+  FAIL_SITES.each do |site|
+    it "must fail for #{site}" do
+      proc { HsinChuMovie::Vieshow.new(site.to_i) }.must_raise RuntimeError
+    end
+  end
 end
