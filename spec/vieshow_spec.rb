@@ -11,6 +11,7 @@ HOUR_MIN = 11..15
 AN_HOUR = 1 / 24.to_f
 MIDNIGHT = %w(00 01 02 03)
 TAIWAN_TIME = '+8'.to_f
+GIVEN_DAY = (0..2).to_a
 
 describe 'Get film information' do
   TEST_SITES.each do |site|
@@ -52,29 +53,43 @@ describe 'Get show times for a film' do
 end
 
 describe 'Get films after a given time on given day' do
-  it 'should return films after a time' do
-    TEST_SITES.each do |site|
+  TEST_SITES.each do |site|
+    it "should only return films after a time for #{site}" do
       VCR.use_cassette("vieshow_table_#{site}") do
         cinema = HsinChuMovie::Vieshow.new(site.to_i)
         time = DateTime.now TAIWAN_TIME
-        time_s = time.to_s[HOUR_MIN]
+        time += GIVEN_DAY.sample
+        time_s = time.to_s
+        day_films = cinema.films_on_day(time_s)
         after_films = cinema.films_after_time(time_s)
-        exit if after_films.empty?
+        # comparison_time is an hour earlier than specified time
         comparison_time = (time - AN_HOUR).to_s[HOUR_MIN]
-        after_films.each do |_film, date_times|
-          # We're taking user input and getting results starting an hour back
-          date_times.values.each do |show_times|
-            show_times.each do |show_time|
-              if (show_time < comparison_time) &&
-                 (MIDNIGHT.include? show_time[0..1])
-                # Movies airing from midnight onwards are group with past day
-                show_time[0..1] = "#{show_time[0..1].to_i + 24}"
+        day_films.each do |film, date_times|
+          date_times.each do |date, show_times|
+            if after_films[film].nil?
+              # If empty, all show times must be less than comparison time
+              show_times.each do |show_time|
+                show_time.must_be :<, comparison_time
               end
-              show_time.must_be :>=, comparison_time
+            else
+              after_show_times = after_films[film][date]
+              after_show_times.each do |ast|
+                # On day show times must include after request show times
+                show_times.must_include ast
+                # After show times must be greater than comparison time
+                if (ast < comparison_time) &&
+                   (MIDNIGHT.include? ast[0..1])
+                  # Movies airing from midnight onwards are group with past day
+                  ast[0..1] = "#{ast[0..1].to_i + 24}"
+                end
+                ast.must_be :>=, comparison_time
+              end
+              show_times -= after_films[film][date]
+              # Any show time not returned must be less than comparison time
+              show_times.each do |show_time|
+                show_time.must_be :<, comparison_time
+              end
             end; end; end; end; end
-  end
-  it 'should not miss any films' do
-    # TODO: Check to make sure no late films are missed
   end
 end
 
