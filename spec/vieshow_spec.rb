@@ -66,7 +66,6 @@ describe 'Get films after a given time on given day' do
               end
             else
               after_show_times = after_films[film][date]
-              print "#{after_show_times}\n"
               after_show_times.each do |ast|
                 # On day show times must include after request show times
                 show_times.must_include ast
@@ -79,7 +78,6 @@ describe 'Get films after a given time on given day' do
                 ast.must_be :>=, comparison_time
               end
               show_times -= after_films[film][date]
-              print "#{show_times}GH\n"
               # Any show time not returned must be less than comparison time
               show_times.each do |show_time|
                 show_time.must_be :<, comparison_time

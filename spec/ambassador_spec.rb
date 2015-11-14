@@ -25,6 +25,48 @@ describe 'Get film information' do
   end
 end
 
+describe 'Get films after a given time on given day' do
+  AMBASSADOR_TEST_SITES.each do |site|
+    it "should only return films after a time for #{site}" do
+      VCR.use_cassette("ambassador_table_#{site}") do
+        cinema = HsinChuMovie::Ambassador.new site
+        time = DateTime.now.new_offset(TAIWAN_TIME)
+        time += GIVEN_DAY.sample
+        time_s = time.to_s
+        time_s[SEC_PART] = ZERO_SEC
+        day_films = cinema.films_on_day(time_s)
+        after_films = cinema.films_after_time(time_s)
+        # comparison_time is an hour earlier than specified time
+        comparison_time = (time - AN_HOUR).to_s[HOUR_MIN]
+        day_films.each do |film, date_times|
+          date_times.each do |date, show_times|
+            if after_films[film].nil?
+              # If empty, all show times must be less than comparison time
+              show_times.each do |show_time|
+                show_time.must_be :<, comparison_time
+              end
+            else
+              after_show_times = after_films[film][date]
+              after_show_times.each do |ast|
+                # On day show times must include after request show times
+                show_times.must_include ast
+                # After show times must be greater than comparison time
+                if (ast < comparison_time) &&
+                   (MIDNIGHT.include? ast[HOUR_PART])
+                  # Movies airing from midnight onwards are group with past day
+                  ast[HOUR_PART] = "#{ast[HOUR_PART].to_i + ADD_24}"
+                end
+                ast.must_be :>=, comparison_time
+              end
+              show_times -= after_films[film][date]
+              # Any show time not returned must be less than comparison time
+              show_times.each do |show_time|
+                show_time.must_be :<, comparison_time
+              end
+            end; end; end; end; end
+  end
+end
+
 # describe 'Outside of 1 and 14 must fail' do
 #   FAIL_SITES.each do |site|
 #     it "must fail for #{site}" do
