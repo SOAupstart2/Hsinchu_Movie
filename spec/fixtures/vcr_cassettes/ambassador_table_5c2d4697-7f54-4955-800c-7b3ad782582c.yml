@@ -33,7 +33,7 @@ http_interactions:
       X-Powered-By:
       - ASP.NET
       Date:
-      - Sat, 14 Nov 2015 13:25:07 GMT
+      - Sat, 14 Nov 2015 13:29:25 GMT
     body:
       encoding: ASCII-8BIT
       string: !binary |-
@@ -1283,7 +1283,7 @@ http_interactions:
         ICAgICB9DQoNCiAgICAgICAgfSkoKTsNCiAgICA8L3NjcmlwdD4NCg0KPC9i
         b2R5Pg0KPC9odG1sPiA=
     http_version: 
-  recorded_at: Sat, 14 Nov 2015 13:25:22 GMT
+  recorded_at: Sat, 14 Nov 2015 13:29:40 GMT
 - request:
     method: get
     uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetScreeningDateListForTheater/?theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
@@ -1323,14 +1323,14 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST, PUT, DELETE, OPTIONS
       Date:
-      - Sat, 14 Nov 2015 13:25:17 GMT
+      - Sat, 14 Nov 2015 13:29:35 GMT
       Content-Length:
       - '118'
     body:
       encoding: UTF-8
       string: '["2015/11/14","2015/11/15","2015/11/16","2015/11/17","2015/11/18","2015/11/19","2015/11/20","2015/11/21","2015/11/22"]'
     http_version: 
-  recorded_at: Sat, 14 Nov 2015 13:25:22 GMT
+  recorded_at: Sat, 14 Nov 2015 13:29:40 GMT
 - request:
     method: get
     uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/11/14&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
@@ -1370,7 +1370,7 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST, PUT, DELETE, OPTIONS
       Date:
-      - Sat, 14 Nov 2015 13:25:17 GMT
+      - Sat, 14 Nov 2015 13:29:35 GMT
       Content-Length:
       - '5859'
     body:
@@ -1508,214 +1508,7 @@ http_interactions:
         bH1dLCJNb3ZpZUlkIjoiYzg1NWFmMTgtNTY5NS00NDgwLThiNjQtNWJhYjg5
         OGIwMDNkIn1d
     http_version: 
-  recorded_at: Sat, 14 Nov 2015 13:25:22 GMT
-- request:
-    method: get
-    uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/11/20&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Expires:
-      - "-1"
-      Server:
-      - Microsoft-IIS/8.0
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - accept, authorization, origin,content-type
-      Access-Control-Allow-Methods:
-      - GET, POST, PUT, DELETE, OPTIONS
-      Date:
-      - Sat, 14 Nov 2015 13:25:17 GMT
-      Content-Length:
-      - '977'
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        W3siTmFtZSI6Iumjoumkk+mBiuaIsu+8muiHqueUseW5u+Wkoue1gue1kOaI
-        sCIsIkZvcmVpZ25OYW1lIjoiVGhlIEh1bmdlciBHYW1lczogTW9ja2luZ2ph
-        eSAtIFBhcnQgMiIsIkFsbENhc3RzIjoi54+N5aau5L2b5Yue5YCr57WyLOWW
-        rOioseWTiOWlh+ajriAs5LyN6L+q5ZOI6YeM6YGcLOS8ium6l+iOjueZveeP
-        reWFi+e1sizpgKPmganmvKLmlq/msoMs5ZSQ57SN6JiH5b636JitLOWPsuS4
-        ueWIqeWcluWlhyIsIlJhdGVkIjoi6LyU5bCO57SaKFBHKSIsIlJ1bm5pbmdU
-        aW1lIjoiMuaZgjE35YiGIiwiUmVsZWFzZURhdGUiOiIyMDE1LzExLzIwIiwi
-        UmVjb21tZW5kR3JhZGUiOjAsIlBvc3RlckZpbGVuYW1lIjoiYXNzZXRzL2lt
-        Zy9tb3ZpZXMvVGhlSHVuZ2VyR2FtZXNNb2NraW5namF5UGFydDJfMTgweDI3
-        MF9Qb3N0ZXIuanBnIiwiUG9zdGVySW1hZ2VTb3VyY2UiOjAsIkdhbGxlcnlJ
-        bWFnZXMiOm51bGwsIlBlcmlvZFNob3d0aW1lIjpbeyJTYWxsZUlkIjpudWxs
-        LCJOYW1lIjpudWxsLCJTZWF0Q291bnQiOjAsIkVkaXRpb25fM0QiOmZhbHNl
-        LCJFZGl0aW9uX0RpZ2l0YWwiOnRydWUsIkVkaXRpb25fTGFuZ3VhZ2UiOiIi
-        LCJFZGl0aW9uX0FkZGl0aW9uYWxOb3RlIjoiIiwiQXNzaXN0YW50TmFtZSI6
-        IijmlbjkvY3niYgp6aOi6aST6YGK5oiy77ya6Ieq55Sx5bm75aSi57WC57WQ
-        5oiwIiwiUGxheWluZ0RhdGUiOiIyMDE1LTExLTIwVDAwOjAwOjAwIiwiU2hv
-        d3RpbWVzIjpbIjEwOjMwIiwiMTM6MDAiLCIxNTozMCIsIjE4OjAwIiwiMjA6
-        MzAiLCIyMzowMCJdLCJEQk9YQXJlYSI6bnVsbCwiVGhlYXRlcklkIjoiNWMy
-        ZDQ2OTctN2Y1NC00OTU1LTgwMGMtN2IzYWQ3ODI1ODJjIiwiTW92aWVJZCI6
-        bnVsbCwiRnVsbE1vdmllTmFtZSI6bnVsbCwiTW92aWVOYW1lVmlzaWJsZSI6
-        bnVsbCwiQWxsU2hvd3RpbWVzIjpudWxsfV0sIk1vdmllSWQiOiI2OTNiNWFj
-        MC1kODBlLTRkNDAtOWRiOS01MzM0YWEwOGMzYzUifV0=
-    http_version: 
-  recorded_at: Sat, 14 Nov 2015 13:25:22 GMT
-- request:
-    method: get
-    uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/11/21&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Expires:
-      - "-1"
-      Server:
-      - Microsoft-IIS/8.0
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - accept, authorization, origin,content-type
-      Access-Control-Allow-Methods:
-      - GET, POST, PUT, DELETE, OPTIONS
-      Date:
-      - Sat, 14 Nov 2015 13:25:17 GMT
-      Content-Length:
-      - '977'
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        W3siTmFtZSI6Iumjoumkk+mBiuaIsu+8muiHqueUseW5u+Wkoue1gue1kOaI
-        sCIsIkZvcmVpZ25OYW1lIjoiVGhlIEh1bmdlciBHYW1lczogTW9ja2luZ2ph
-        eSAtIFBhcnQgMiIsIkFsbENhc3RzIjoi54+N5aau5L2b5Yue5YCr57WyLOWW
-        rOioseWTiOWlh+ajriAs5LyN6L+q5ZOI6YeM6YGcLOS8ium6l+iOjueZveeP
-        reWFi+e1sizpgKPmganmvKLmlq/msoMs5ZSQ57SN6JiH5b636JitLOWPsuS4
-        ueWIqeWcluWlhyIsIlJhdGVkIjoi6LyU5bCO57SaKFBHKSIsIlJ1bm5pbmdU
-        aW1lIjoiMuaZgjE35YiGIiwiUmVsZWFzZURhdGUiOiIyMDE1LzExLzIwIiwi
-        UmVjb21tZW5kR3JhZGUiOjAsIlBvc3RlckZpbGVuYW1lIjoiYXNzZXRzL2lt
-        Zy9tb3ZpZXMvVGhlSHVuZ2VyR2FtZXNNb2NraW5namF5UGFydDJfMTgweDI3
-        MF9Qb3N0ZXIuanBnIiwiUG9zdGVySW1hZ2VTb3VyY2UiOjAsIkdhbGxlcnlJ
-        bWFnZXMiOm51bGwsIlBlcmlvZFNob3d0aW1lIjpbeyJTYWxsZUlkIjpudWxs
-        LCJOYW1lIjpudWxsLCJTZWF0Q291bnQiOjAsIkVkaXRpb25fM0QiOmZhbHNl
-        LCJFZGl0aW9uX0RpZ2l0YWwiOnRydWUsIkVkaXRpb25fTGFuZ3VhZ2UiOiIi
-        LCJFZGl0aW9uX0FkZGl0aW9uYWxOb3RlIjoiIiwiQXNzaXN0YW50TmFtZSI6
-        IijmlbjkvY3niYgp6aOi6aST6YGK5oiy77ya6Ieq55Sx5bm75aSi57WC57WQ
-        5oiwIiwiUGxheWluZ0RhdGUiOiIyMDE1LTExLTIxVDAwOjAwOjAwIiwiU2hv
-        d3RpbWVzIjpbIjEwOjMwIiwiMTM6MDAiLCIxNTozMCIsIjE4OjAwIiwiMjA6
-        MzAiLCIyMzowMCJdLCJEQk9YQXJlYSI6bnVsbCwiVGhlYXRlcklkIjoiNWMy
-        ZDQ2OTctN2Y1NC00OTU1LTgwMGMtN2IzYWQ3ODI1ODJjIiwiTW92aWVJZCI6
-        bnVsbCwiRnVsbE1vdmllTmFtZSI6bnVsbCwiTW92aWVOYW1lVmlzaWJsZSI6
-        bnVsbCwiQWxsU2hvd3RpbWVzIjpudWxsfV0sIk1vdmllSWQiOiI2OTNiNWFj
-        MC1kODBlLTRkNDAtOWRiOS01MzM0YWEwOGMzYzUifV0=
-    http_version: 
-  recorded_at: Sat, 14 Nov 2015 13:25:22 GMT
-- request:
-    method: get
-    uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/11/22&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Expires:
-      - "-1"
-      Server:
-      - Microsoft-IIS/8.0
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - accept, authorization, origin,content-type
-      Access-Control-Allow-Methods:
-      - GET, POST, PUT, DELETE, OPTIONS
-      Date:
-      - Sat, 14 Nov 2015 13:25:17 GMT
-      Content-Length:
-      - '977'
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        W3siTmFtZSI6Iumjoumkk+mBiuaIsu+8muiHqueUseW5u+Wkoue1gue1kOaI
-        sCIsIkZvcmVpZ25OYW1lIjoiVGhlIEh1bmdlciBHYW1lczogTW9ja2luZ2ph
-        eSAtIFBhcnQgMiIsIkFsbENhc3RzIjoi54+N5aau5L2b5Yue5YCr57WyLOWW
-        rOioseWTiOWlh+ajriAs5LyN6L+q5ZOI6YeM6YGcLOS8ium6l+iOjueZveeP
-        reWFi+e1sizpgKPmganmvKLmlq/msoMs5ZSQ57SN6JiH5b636JitLOWPsuS4
-        ueWIqeWcluWlhyIsIlJhdGVkIjoi6LyU5bCO57SaKFBHKSIsIlJ1bm5pbmdU
-        aW1lIjoiMuaZgjE35YiGIiwiUmVsZWFzZURhdGUiOiIyMDE1LzExLzIwIiwi
-        UmVjb21tZW5kR3JhZGUiOjAsIlBvc3RlckZpbGVuYW1lIjoiYXNzZXRzL2lt
-        Zy9tb3ZpZXMvVGhlSHVuZ2VyR2FtZXNNb2NraW5namF5UGFydDJfMTgweDI3
-        MF9Qb3N0ZXIuanBnIiwiUG9zdGVySW1hZ2VTb3VyY2UiOjAsIkdhbGxlcnlJ
-        bWFnZXMiOm51bGwsIlBlcmlvZFNob3d0aW1lIjpbeyJTYWxsZUlkIjpudWxs
-        LCJOYW1lIjpudWxsLCJTZWF0Q291bnQiOjAsIkVkaXRpb25fM0QiOmZhbHNl
-        LCJFZGl0aW9uX0RpZ2l0YWwiOnRydWUsIkVkaXRpb25fTGFuZ3VhZ2UiOiIi
-        LCJFZGl0aW9uX0FkZGl0aW9uYWxOb3RlIjoiIiwiQXNzaXN0YW50TmFtZSI6
-        IijmlbjkvY3niYgp6aOi6aST6YGK5oiy77ya6Ieq55Sx5bm75aSi57WC57WQ
-        5oiwIiwiUGxheWluZ0RhdGUiOiIyMDE1LTExLTIyVDAwOjAwOjAwIiwiU2hv
-        d3RpbWVzIjpbIjEwOjMwIiwiMTM6MDAiLCIxNTozMCIsIjE4OjAwIiwiMjA6
-        MzAiLCIyMzowMCJdLCJEQk9YQXJlYSI6bnVsbCwiVGhlYXRlcklkIjoiNWMy
-        ZDQ2OTctN2Y1NC00OTU1LTgwMGMtN2IzYWQ3ODI1ODJjIiwiTW92aWVJZCI6
-        bnVsbCwiRnVsbE1vdmllTmFtZSI6bnVsbCwiTW92aWVOYW1lVmlzaWJsZSI6
-        bnVsbCwiQWxsU2hvd3RpbWVzIjpudWxsfV0sIk1vdmllSWQiOiI2OTNiNWFj
-        MC1kODBlLTRkNDAtOWRiOS01MzM0YWEwOGMzYzUifV0=
-    http_version: 
-  recorded_at: Sat, 14 Nov 2015 13:25:22 GMT
+  recorded_at: Sat, 14 Nov 2015 13:29:40 GMT
 - request:
     method: get
     uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/11/15&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
@@ -1755,7 +1548,7 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST, PUT, DELETE, OPTIONS
       Date:
-      - Sat, 14 Nov 2015 13:25:17 GMT
+      - Sat, 14 Nov 2015 13:29:35 GMT
       Content-Length:
       - '5859'
     body:
@@ -1893,7 +1686,7 @@ http_interactions:
         bH1dLCJNb3ZpZUlkIjoiYzg1NWFmMTgtNTY5NS00NDgwLThiNjQtNWJhYjg5
         OGIwMDNkIn1d
     http_version: 
-  recorded_at: Sat, 14 Nov 2015 13:25:22 GMT
+  recorded_at: Sat, 14 Nov 2015 13:29:40 GMT
 - request:
     method: get
     uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/11/16&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
@@ -1933,7 +1726,7 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST, PUT, DELETE, OPTIONS
       Date:
-      - Sat, 14 Nov 2015 13:25:17 GMT
+      - Sat, 14 Nov 2015 13:29:35 GMT
       Content-Length:
       - '5867'
     body:
@@ -2071,7 +1864,7 @@ http_interactions:
         bWVzIjpudWxsfV0sIk1vdmllSWQiOiJjODU1YWYxOC01Njk1LTQ0ODAtOGI2
         NC01YmFiODk4YjAwM2QifV0=
     http_version: 
-  recorded_at: Sat, 14 Nov 2015 13:25:22 GMT
+  recorded_at: Sat, 14 Nov 2015 13:29:40 GMT
 - request:
     method: get
     uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/11/17&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
@@ -2111,7 +1904,7 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST, PUT, DELETE, OPTIONS
       Date:
-      - Sat, 14 Nov 2015 13:25:17 GMT
+      - Sat, 14 Nov 2015 13:29:35 GMT
       Content-Length:
       - '5859'
     body:
@@ -2249,7 +2042,7 @@ http_interactions:
         bH1dLCJNb3ZpZUlkIjoiYzg1NWFmMTgtNTY5NS00NDgwLThiNjQtNWJhYjg5
         OGIwMDNkIn1d
     http_version: 
-  recorded_at: Sat, 14 Nov 2015 13:25:22 GMT
+  recorded_at: Sat, 14 Nov 2015 13:29:40 GMT
 - request:
     method: get
     uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/11/18&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
@@ -2289,7 +2082,7 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST, PUT, DELETE, OPTIONS
       Date:
-      - Sat, 14 Nov 2015 13:25:17 GMT
+      - Sat, 14 Nov 2015 13:29:35 GMT
       Content-Length:
       - '5867'
     body:
@@ -2427,7 +2220,7 @@ http_interactions:
         bWVzIjpudWxsfV0sIk1vdmllSWQiOiJjODU1YWYxOC01Njk1LTQ0ODAtOGI2
         NC01YmFiODk4YjAwM2QifV0=
     http_version: 
-  recorded_at: Sat, 14 Nov 2015 13:25:22 GMT
+  recorded_at: Sat, 14 Nov 2015 13:29:40 GMT
 - request:
     method: get
     uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/11/19&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
@@ -2467,7 +2260,7 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST, PUT, DELETE, OPTIONS
       Date:
-      - Sat, 14 Nov 2015 13:25:17 GMT
+      - Sat, 14 Nov 2015 13:29:35 GMT
       Content-Length:
       - '5867'
     body:
@@ -2605,5 +2398,212 @@ http_interactions:
         bWVzIjpudWxsfV0sIk1vdmllSWQiOiJjODU1YWYxOC01Njk1LTQ0ODAtOGI2
         NC01YmFiODk4YjAwM2QifV0=
     http_version: 
-  recorded_at: Sat, 14 Nov 2015 13:25:22 GMT
+  recorded_at: Sat, 14 Nov 2015 13:29:40 GMT
+- request:
+    method: get
+    uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/11/20&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/8.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - accept, authorization, origin,content-type
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Date:
+      - Sat, 14 Nov 2015 13:29:35 GMT
+      Content-Length:
+      - '977'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siTmFtZSI6Iumjoumkk+mBiuaIsu+8muiHqueUseW5u+Wkoue1gue1kOaI
+        sCIsIkZvcmVpZ25OYW1lIjoiVGhlIEh1bmdlciBHYW1lczogTW9ja2luZ2ph
+        eSAtIFBhcnQgMiIsIkFsbENhc3RzIjoi54+N5aau5L2b5Yue5YCr57WyLOWW
+        rOioseWTiOWlh+ajriAs5LyN6L+q5ZOI6YeM6YGcLOS8ium6l+iOjueZveeP
+        reWFi+e1sizpgKPmganmvKLmlq/msoMs5ZSQ57SN6JiH5b636JitLOWPsuS4
+        ueWIqeWcluWlhyIsIlJhdGVkIjoi6LyU5bCO57SaKFBHKSIsIlJ1bm5pbmdU
+        aW1lIjoiMuaZgjE35YiGIiwiUmVsZWFzZURhdGUiOiIyMDE1LzExLzIwIiwi
+        UmVjb21tZW5kR3JhZGUiOjAsIlBvc3RlckZpbGVuYW1lIjoiYXNzZXRzL2lt
+        Zy9tb3ZpZXMvVGhlSHVuZ2VyR2FtZXNNb2NraW5namF5UGFydDJfMTgweDI3
+        MF9Qb3N0ZXIuanBnIiwiUG9zdGVySW1hZ2VTb3VyY2UiOjAsIkdhbGxlcnlJ
+        bWFnZXMiOm51bGwsIlBlcmlvZFNob3d0aW1lIjpbeyJTYWxsZUlkIjpudWxs
+        LCJOYW1lIjpudWxsLCJTZWF0Q291bnQiOjAsIkVkaXRpb25fM0QiOmZhbHNl
+        LCJFZGl0aW9uX0RpZ2l0YWwiOnRydWUsIkVkaXRpb25fTGFuZ3VhZ2UiOiIi
+        LCJFZGl0aW9uX0FkZGl0aW9uYWxOb3RlIjoiIiwiQXNzaXN0YW50TmFtZSI6
+        IijmlbjkvY3niYgp6aOi6aST6YGK5oiy77ya6Ieq55Sx5bm75aSi57WC57WQ
+        5oiwIiwiUGxheWluZ0RhdGUiOiIyMDE1LTExLTIwVDAwOjAwOjAwIiwiU2hv
+        d3RpbWVzIjpbIjEwOjMwIiwiMTM6MDAiLCIxNTozMCIsIjE4OjAwIiwiMjA6
+        MzAiLCIyMzowMCJdLCJEQk9YQXJlYSI6bnVsbCwiVGhlYXRlcklkIjoiNWMy
+        ZDQ2OTctN2Y1NC00OTU1LTgwMGMtN2IzYWQ3ODI1ODJjIiwiTW92aWVJZCI6
+        bnVsbCwiRnVsbE1vdmllTmFtZSI6bnVsbCwiTW92aWVOYW1lVmlzaWJsZSI6
+        bnVsbCwiQWxsU2hvd3RpbWVzIjpudWxsfV0sIk1vdmllSWQiOiI2OTNiNWFj
+        MC1kODBlLTRkNDAtOWRiOS01MzM0YWEwOGMzYzUifV0=
+    http_version: 
+  recorded_at: Sat, 14 Nov 2015 13:29:40 GMT
+- request:
+    method: get
+    uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/11/21&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/8.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - accept, authorization, origin,content-type
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Date:
+      - Sat, 14 Nov 2015 13:29:35 GMT
+      Content-Length:
+      - '977'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siTmFtZSI6Iumjoumkk+mBiuaIsu+8muiHqueUseW5u+Wkoue1gue1kOaI
+        sCIsIkZvcmVpZ25OYW1lIjoiVGhlIEh1bmdlciBHYW1lczogTW9ja2luZ2ph
+        eSAtIFBhcnQgMiIsIkFsbENhc3RzIjoi54+N5aau5L2b5Yue5YCr57WyLOWW
+        rOioseWTiOWlh+ajriAs5LyN6L+q5ZOI6YeM6YGcLOS8ium6l+iOjueZveeP
+        reWFi+e1sizpgKPmganmvKLmlq/msoMs5ZSQ57SN6JiH5b636JitLOWPsuS4
+        ueWIqeWcluWlhyIsIlJhdGVkIjoi6LyU5bCO57SaKFBHKSIsIlJ1bm5pbmdU
+        aW1lIjoiMuaZgjE35YiGIiwiUmVsZWFzZURhdGUiOiIyMDE1LzExLzIwIiwi
+        UmVjb21tZW5kR3JhZGUiOjAsIlBvc3RlckZpbGVuYW1lIjoiYXNzZXRzL2lt
+        Zy9tb3ZpZXMvVGhlSHVuZ2VyR2FtZXNNb2NraW5namF5UGFydDJfMTgweDI3
+        MF9Qb3N0ZXIuanBnIiwiUG9zdGVySW1hZ2VTb3VyY2UiOjAsIkdhbGxlcnlJ
+        bWFnZXMiOm51bGwsIlBlcmlvZFNob3d0aW1lIjpbeyJTYWxsZUlkIjpudWxs
+        LCJOYW1lIjpudWxsLCJTZWF0Q291bnQiOjAsIkVkaXRpb25fM0QiOmZhbHNl
+        LCJFZGl0aW9uX0RpZ2l0YWwiOnRydWUsIkVkaXRpb25fTGFuZ3VhZ2UiOiIi
+        LCJFZGl0aW9uX0FkZGl0aW9uYWxOb3RlIjoiIiwiQXNzaXN0YW50TmFtZSI6
+        IijmlbjkvY3niYgp6aOi6aST6YGK5oiy77ya6Ieq55Sx5bm75aSi57WC57WQ
+        5oiwIiwiUGxheWluZ0RhdGUiOiIyMDE1LTExLTIxVDAwOjAwOjAwIiwiU2hv
+        d3RpbWVzIjpbIjEwOjMwIiwiMTM6MDAiLCIxNTozMCIsIjE4OjAwIiwiMjA6
+        MzAiLCIyMzowMCJdLCJEQk9YQXJlYSI6bnVsbCwiVGhlYXRlcklkIjoiNWMy
+        ZDQ2OTctN2Y1NC00OTU1LTgwMGMtN2IzYWQ3ODI1ODJjIiwiTW92aWVJZCI6
+        bnVsbCwiRnVsbE1vdmllTmFtZSI6bnVsbCwiTW92aWVOYW1lVmlzaWJsZSI6
+        bnVsbCwiQWxsU2hvd3RpbWVzIjpudWxsfV0sIk1vdmllSWQiOiI2OTNiNWFj
+        MC1kODBlLTRkNDAtOWRiOS01MzM0YWEwOGMzYzUifV0=
+    http_version: 
+  recorded_at: Sat, 14 Nov 2015 13:29:40 GMT
+- request:
+    method: get
+    uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/11/22&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/8.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - accept, authorization, origin,content-type
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Date:
+      - Sat, 14 Nov 2015 13:29:35 GMT
+      Content-Length:
+      - '977'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siTmFtZSI6Iumjoumkk+mBiuaIsu+8muiHqueUseW5u+Wkoue1gue1kOaI
+        sCIsIkZvcmVpZ25OYW1lIjoiVGhlIEh1bmdlciBHYW1lczogTW9ja2luZ2ph
+        eSAtIFBhcnQgMiIsIkFsbENhc3RzIjoi54+N5aau5L2b5Yue5YCr57WyLOWW
+        rOioseWTiOWlh+ajriAs5LyN6L+q5ZOI6YeM6YGcLOS8ium6l+iOjueZveeP
+        reWFi+e1sizpgKPmganmvKLmlq/msoMs5ZSQ57SN6JiH5b636JitLOWPsuS4
+        ueWIqeWcluWlhyIsIlJhdGVkIjoi6LyU5bCO57SaKFBHKSIsIlJ1bm5pbmdU
+        aW1lIjoiMuaZgjE35YiGIiwiUmVsZWFzZURhdGUiOiIyMDE1LzExLzIwIiwi
+        UmVjb21tZW5kR3JhZGUiOjAsIlBvc3RlckZpbGVuYW1lIjoiYXNzZXRzL2lt
+        Zy9tb3ZpZXMvVGhlSHVuZ2VyR2FtZXNNb2NraW5namF5UGFydDJfMTgweDI3
+        MF9Qb3N0ZXIuanBnIiwiUG9zdGVySW1hZ2VTb3VyY2UiOjAsIkdhbGxlcnlJ
+        bWFnZXMiOm51bGwsIlBlcmlvZFNob3d0aW1lIjpbeyJTYWxsZUlkIjpudWxs
+        LCJOYW1lIjpudWxsLCJTZWF0Q291bnQiOjAsIkVkaXRpb25fM0QiOmZhbHNl
+        LCJFZGl0aW9uX0RpZ2l0YWwiOnRydWUsIkVkaXRpb25fTGFuZ3VhZ2UiOiIi
+        LCJFZGl0aW9uX0FkZGl0aW9uYWxOb3RlIjoiIiwiQXNzaXN0YW50TmFtZSI6
+        IijmlbjkvY3niYgp6aOi6aST6YGK5oiy77ya6Ieq55Sx5bm75aSi57WC57WQ
+        5oiwIiwiUGxheWluZ0RhdGUiOiIyMDE1LTExLTIyVDAwOjAwOjAwIiwiU2hv
+        d3RpbWVzIjpbIjEwOjMwIiwiMTM6MDAiLCIxNTozMCIsIjE4OjAwIiwiMjA6
+        MzAiLCIyMzowMCJdLCJEQk9YQXJlYSI6bnVsbCwiVGhlYXRlcklkIjoiNWMy
+        ZDQ2OTctN2Y1NC00OTU1LTgwMGMtN2IzYWQ3ODI1ODJjIiwiTW92aWVJZCI6
+        bnVsbCwiRnVsbE1vdmllTmFtZSI6bnVsbCwiTW92aWVOYW1lVmlzaWJsZSI6
+        bnVsbCwiQWxsU2hvd3RpbWVzIjpudWxsfV0sIk1vdmllSWQiOiI2OTNiNWFj
+        MC1kODBlLTRkNDAtOWRiOS01MzM0YWEwOGMzYzUifV0=
+    http_version: 
+  recorded_at: Sat, 14 Nov 2015 13:29:40 GMT
 recorded_with: VCR 2.9.3

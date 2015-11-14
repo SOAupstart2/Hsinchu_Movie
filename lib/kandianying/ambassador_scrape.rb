@@ -9,9 +9,14 @@ module AmbassadorScrape
     movie_info = Hash.new { |hash, key| hash[key] = {} }
     date_list.map do |date|
       url = "#{AMBASSADOR_FILM_API}theaterId=#{theater_id}&showingDate=#{date}"
-      concurrent_retrieve_info(url, date, movie_info)
-    end.map(&:execute).map(&:value)
-    movie_info.sort.to_h
+      # concurrent_retrieve_info(url, date, movie_info)
+      JSON.parse(Nokogiri::HTML(open(url)).text).map do |movie|
+        name = movie['ForeignName']
+        time = movie['PeriodShowtime'].first['Showtimes']
+        movie_info[name][date] = time
+      end
+    end # .map(&:execute).map(&:value)
+    movie_info # .sort.to_h
   end
 
   def concurrent_retrieve_info(url, date, movie_info)
