@@ -73,7 +73,7 @@ describe 'Get films after a given time on given day' do
             if after_films[film].nil?
               # If empty, all show times must be less than comparison time
               show_times.each do |show_time|
-                show_time.must_be :<, comparison_time
+                show_time.must_be :<=, comparison_time
               end
             else
               after_show_times = after_films[film][date]

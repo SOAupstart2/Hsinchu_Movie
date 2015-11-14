@@ -1,5 +1,5 @@
 # Versioning
 module KanDianYing
-  VERSION = '0.0.7'
-  DATE    = '2015-11-04'
+  VERSION = '0.0.8'
+  DATE    = '2015-11-15'
 end

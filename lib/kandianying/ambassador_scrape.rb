@@ -6,17 +6,22 @@ module AmbassadorScrape
   AMBASSADOR_FILM_API = 'http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?'
 
   def fetch_movie_info(theater_id, date_list)
-    movie_info = Hash.new { |h, k| h[k] = {} }
-    date_list.each do |date|
-      ur = "#{AMBASSADOR_FILM_API}theaterId=#{theater_id}&showingDate=#{date}"
-      movies = JSON.parse(Nokogiri::HTML(open(ur)).text)
-      movies.each do |movie|
+    movie_info = Hash.new { |hash, key| hash[key] = {} }
+    date_list.map do |date|
+      url = "#{AMBASSADOR_FILM_API}theaterId=#{theater_id}&showingDate=#{date}"
+      concurrent_retrieve_info(url, date, movie_info)
+    end.map(&:execute).map(&:value)
+    movie_info
+  end
+
+  def concurrent_retrieve_info(url, date, movie_info)
+    Concurrent::Future.new do
+      JSON.parse(Nokogiri::HTML(open(url)).text).map do |movie|
         name = movie['ForeignName']
         time = movie['PeriodShowtime'].first['Showtimes']
         movie_info[name][date] = time
       end
     end
-    movie_info
   end
 
   def fetch_theater_date(theater_id)
