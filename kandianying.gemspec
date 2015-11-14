@@ -21,4 +21,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'vcr'
   s.add_development_dependency 'webmock'
   s.add_runtime_dependency 'nokogiri'
+  s.add_runtime_dependency 'concurrent-ruby'
 end
