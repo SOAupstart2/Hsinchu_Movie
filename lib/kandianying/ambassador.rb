@@ -4,12 +4,13 @@ require 'json'
 require 'yaml'
 require 'concurrent'
 require_relative 'ambassador_scrape'
+require_relative 'search'
 
 # Scraper for Ambassador
 module Ambassador
   # Class for Vieshow films
   class Ambassador
-    include AmbassadorScrape
+    include AmbassadorScrape, Search
     attr_reader :movie_table, :theater_id_table, :cinema_name
 
     def initialize(id)

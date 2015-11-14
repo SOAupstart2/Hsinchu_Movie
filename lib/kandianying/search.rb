@@ -32,7 +32,7 @@ module Search
   def time_after(date, times, time_preferrence)
     times.select do |time|
       time if (MIDNIGHT.include? time[0..1]) ||
-              (DateTime.parse("#{date}#{time}#{TIMEZONE}") >= time_preferrence)
+              (DateTime.parse("#{date} #{time}#{TIMEZONE}") >= time_preferrence)
     end
   end
 

@@ -10,7 +10,6 @@ describe 'Get film information' do
     it "must return same list of movies for #{site}" do
       VCR.use_cassette("ambassador_name_#{site}") do
         cinema = HsinChuMovie::Ambassador.new site
-        # name = cinema.theater_id_table[site]
         site_names = yml_load("#{AMBASSADOR_FIXTURES}name_#{site}.yml")
         site_names.sort.must_equal cinema.movie_names.sort
       end

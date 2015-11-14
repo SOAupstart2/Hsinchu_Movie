@@ -4,18 +4,6 @@ TEST_SITES = %w(05 12)
 FAIL_SITES = %w(0 16)
 TEST_INFO = %w(name table)
 FIXTURES = './spec/fixtures/vieshow_'
-MONTHS = Date::ABBR_MONTHNAMES.compact
-DAYS = Date::ABBR_DAYNAMES
-PARTIAL_NAME = 4..10
-HOUR_MIN = 11..15
-AN_HOUR = 1 / 24.to_f
-MIDNIGHT = %w(00 01 02 03)
-TAIWAN_TIME = '+8'
-GIVEN_DAY = (0..2).to_a
-A_TO_Z = 'A'..'Z'
-MAX_ALPHABET = 26
-HOUR_PART = 0..1
-ADD_24 = 24
 
 describe 'Get film information' do
   TEST_SITES.each do |site|
@@ -64,6 +52,7 @@ describe 'Get films after a given time on given day' do
         time = DateTime.now.new_offset(TAIWAN_TIME)
         time += GIVEN_DAY.sample
         time_s = time.to_s
+        time_s[SEC_PART] = ZERO_SEC
         day_films = cinema.films_on_day(time_s)
         after_films = cinema.films_after_time(time_s)
         # comparison_time is an hour earlier than specified time
@@ -73,10 +62,11 @@ describe 'Get films after a given time on given day' do
             if after_films[film].nil?
               # If empty, all show times must be less than comparison time
               show_times.each do |show_time|
-                show_time.must_be :<=, comparison_time
+                show_time.must_be :<, comparison_time
               end
             else
               after_show_times = after_films[film][date]
+              print "#{after_show_times}\n"
               after_show_times.each do |ast|
                 # On day show times must include after request show times
                 show_times.must_include ast
@@ -89,6 +79,7 @@ describe 'Get films after a given time on given day' do
                 ast.must_be :>=, comparison_time
               end
               show_times -= after_films[film][date]
+              print "#{show_times}GH\n"
               # Any show time not returned must be less than comparison time
               show_times.each do |show_time|
                 show_time.must_be :<, comparison_time
