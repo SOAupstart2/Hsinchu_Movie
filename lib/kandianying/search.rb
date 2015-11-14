@@ -1,5 +1,5 @@
 # Helper module to search for films
-module VieshowSearch
+module Search
   NO_FILM = 'Film currently not on show'
   AN_HOUR = 1 / 24.to_f
   TIMEZONE = '+8'
