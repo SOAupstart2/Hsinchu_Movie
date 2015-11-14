@@ -11,7 +11,7 @@ module AmbassadorScrape
       url = "#{AMBASSADOR_FILM_API}theaterId=#{theater_id}&showingDate=#{date}"
       concurrent_retrieve_info(url, date, movie_info)
     end.map(&:execute).map(&:value)
-    movie_info
+    movie_info.sort.to_h
   end
 
   def concurrent_retrieve_info(url, date, movie_info)

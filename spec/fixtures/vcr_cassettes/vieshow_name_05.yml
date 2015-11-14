@@ -27,15 +27,15 @@ http_interactions:
       Server:
       - Microsoft-IIS/7.5
       Set-Cookie:
-      - ASP.NET_SessionId=wxchw1552ulujzagwhd1m345; path=/; HttpOnly
-      - visSessionID=bd58e45970a54735ba7f2104f4823407; expires=Mon, 14-Dec-2015 13:19:14
+      - ASP.NET_SessionId=15twifm4tx5pqn55iqgzx155; path=/; HttpOnly
+      - visSessionID=e3408086d86e4a18a0bc48656743c1da; expires=Mon, 14-Dec-2015 13:25:19
         GMT; path=/
       X-Aspnet-Version:
       - 2.0.50727
       X-Powered-By:
       - ASP.NET
       Date:
-      - Sat, 14 Nov 2015 13:19:13 GMT
+      - Sat, 14 Nov 2015 13:25:19 GMT
       Content-Length:
       - '19686'
     body:
@@ -294,5 +294,5 @@ http_interactions:
         class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">11:00, 12:20,
         14:00, 15:40, 17:15, 19:00, 20:15, 22:00, 23:15</td>\r\n\t</tr>\r\n</table>\r\n\t\t\t</form>\r\n\t</body>\r\n</HTML>\r\n"
     http_version: 
-  recorded_at: Sat, 14 Nov 2015 13:19:16 GMT
+  recorded_at: Sat, 14 Nov 2015 13:25:22 GMT
 recorded_with: VCR 2.9.3

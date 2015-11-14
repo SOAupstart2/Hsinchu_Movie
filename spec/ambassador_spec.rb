@@ -11,7 +11,7 @@ describe 'Get film information' do
       VCR.use_cassette("ambassador_name_#{site}") do
         cinema = HsinChuMovie::Ambassador.new site
         site_names = yml_load("#{AMBASSADOR_FIXTURES}name_#{site}.yml")
-        site_names.sort.must_equal cinema.movie_names.sort
+        site_names.must_equal cinema.movie_names
       end
     end
 
@@ -19,7 +19,7 @@ describe 'Get film information' do
       VCR.use_cassette("ambassador_table_#{site}") do
         cinema = HsinChuMovie::Ambassador.new site
         site_table = yml_load("#{AMBASSADOR_FIXTURES}table_#{site}.yml")
-        site_table.sort.to_h.must_equal cinema.movie_table.sort.to_h
+        site_table.must_equal cinema.movie_table
       end
     end
   end
