@@ -2675,4 +2675,458 @@ http_interactions:
         MC1kODBlLTRkNDAtOWRiOS01MzM0YWEwOGMzYzUifV0=
     http_version: 
   recorded_at: Sat, 14 Nov 2015 10:26:03 GMT
+- request:
+    method: get
+    uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/11/20&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/8.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - accept, authorization, origin,content-type
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Date:
+      - Sat, 14 Nov 2015 10:31:03 GMT
+      Content-Length:
+      - '977'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siTmFtZSI6Iumjoumkk+mBiuaIsu+8muiHqueUseW5u+Wkoue1gue1kOaI
+        sCIsIkZvcmVpZ25OYW1lIjoiVGhlIEh1bmdlciBHYW1lczogTW9ja2luZ2ph
+        eSAtIFBhcnQgMiIsIkFsbENhc3RzIjoi54+N5aau5L2b5Yue5YCr57WyLOWW
+        rOioseWTiOWlh+ajriAs5LyN6L+q5ZOI6YeM6YGcLOS8ium6l+iOjueZveeP
+        reWFi+e1sizpgKPmganmvKLmlq/msoMs5ZSQ57SN6JiH5b636JitLOWPsuS4
+        ueWIqeWcluWlhyIsIlJhdGVkIjoi6LyU5bCO57SaKFBHKSIsIlJ1bm5pbmdU
+        aW1lIjoiMuaZgjE35YiGIiwiUmVsZWFzZURhdGUiOiIyMDE1LzExLzIwIiwi
+        UmVjb21tZW5kR3JhZGUiOjAsIlBvc3RlckZpbGVuYW1lIjoiYXNzZXRzL2lt
+        Zy9tb3ZpZXMvVGhlSHVuZ2VyR2FtZXNNb2NraW5namF5UGFydDJfMTgweDI3
+        MF9Qb3N0ZXIuanBnIiwiUG9zdGVySW1hZ2VTb3VyY2UiOjAsIkdhbGxlcnlJ
+        bWFnZXMiOm51bGwsIlBlcmlvZFNob3d0aW1lIjpbeyJTYWxsZUlkIjpudWxs
+        LCJOYW1lIjpudWxsLCJTZWF0Q291bnQiOjAsIkVkaXRpb25fM0QiOmZhbHNl
+        LCJFZGl0aW9uX0RpZ2l0YWwiOnRydWUsIkVkaXRpb25fTGFuZ3VhZ2UiOiIi
+        LCJFZGl0aW9uX0FkZGl0aW9uYWxOb3RlIjoiIiwiQXNzaXN0YW50TmFtZSI6
+        IijmlbjkvY3niYgp6aOi6aST6YGK5oiy77ya6Ieq55Sx5bm75aSi57WC57WQ
+        5oiwIiwiUGxheWluZ0RhdGUiOiIyMDE1LTExLTIwVDAwOjAwOjAwIiwiU2hv
+        d3RpbWVzIjpbIjEwOjMwIiwiMTM6MDAiLCIxNTozMCIsIjE4OjAwIiwiMjA6
+        MzAiLCIyMzowMCJdLCJEQk9YQXJlYSI6bnVsbCwiVGhlYXRlcklkIjoiNWMy
+        ZDQ2OTctN2Y1NC00OTU1LTgwMGMtN2IzYWQ3ODI1ODJjIiwiTW92aWVJZCI6
+        bnVsbCwiRnVsbE1vdmllTmFtZSI6bnVsbCwiTW92aWVOYW1lVmlzaWJsZSI6
+        bnVsbCwiQWxsU2hvd3RpbWVzIjpudWxsfV0sIk1vdmllSWQiOiI2OTNiNWFj
+        MC1kODBlLTRkNDAtOWRiOS01MzM0YWEwOGMzYzUifV0=
+    http_version: 
+  recorded_at: Sat, 14 Nov 2015 10:31:08 GMT
+- request:
+    method: get
+    uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/11/22&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/8.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - accept, authorization, origin,content-type
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Date:
+      - Sat, 14 Nov 2015 10:31:03 GMT
+      Content-Length:
+      - '977'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siTmFtZSI6Iumjoumkk+mBiuaIsu+8muiHqueUseW5u+Wkoue1gue1kOaI
+        sCIsIkZvcmVpZ25OYW1lIjoiVGhlIEh1bmdlciBHYW1lczogTW9ja2luZ2ph
+        eSAtIFBhcnQgMiIsIkFsbENhc3RzIjoi54+N5aau5L2b5Yue5YCr57WyLOWW
+        rOioseWTiOWlh+ajriAs5LyN6L+q5ZOI6YeM6YGcLOS8ium6l+iOjueZveeP
+        reWFi+e1sizpgKPmganmvKLmlq/msoMs5ZSQ57SN6JiH5b636JitLOWPsuS4
+        ueWIqeWcluWlhyIsIlJhdGVkIjoi6LyU5bCO57SaKFBHKSIsIlJ1bm5pbmdU
+        aW1lIjoiMuaZgjE35YiGIiwiUmVsZWFzZURhdGUiOiIyMDE1LzExLzIwIiwi
+        UmVjb21tZW5kR3JhZGUiOjAsIlBvc3RlckZpbGVuYW1lIjoiYXNzZXRzL2lt
+        Zy9tb3ZpZXMvVGhlSHVuZ2VyR2FtZXNNb2NraW5namF5UGFydDJfMTgweDI3
+        MF9Qb3N0ZXIuanBnIiwiUG9zdGVySW1hZ2VTb3VyY2UiOjAsIkdhbGxlcnlJ
+        bWFnZXMiOm51bGwsIlBlcmlvZFNob3d0aW1lIjpbeyJTYWxsZUlkIjpudWxs
+        LCJOYW1lIjpudWxsLCJTZWF0Q291bnQiOjAsIkVkaXRpb25fM0QiOmZhbHNl
+        LCJFZGl0aW9uX0RpZ2l0YWwiOnRydWUsIkVkaXRpb25fTGFuZ3VhZ2UiOiIi
+        LCJFZGl0aW9uX0FkZGl0aW9uYWxOb3RlIjoiIiwiQXNzaXN0YW50TmFtZSI6
+        IijmlbjkvY3niYgp6aOi6aST6YGK5oiy77ya6Ieq55Sx5bm75aSi57WC57WQ
+        5oiwIiwiUGxheWluZ0RhdGUiOiIyMDE1LTExLTIyVDAwOjAwOjAwIiwiU2hv
+        d3RpbWVzIjpbIjEwOjMwIiwiMTM6MDAiLCIxNTozMCIsIjE4OjAwIiwiMjA6
+        MzAiLCIyMzowMCJdLCJEQk9YQXJlYSI6bnVsbCwiVGhlYXRlcklkIjoiNWMy
+        ZDQ2OTctN2Y1NC00OTU1LTgwMGMtN2IzYWQ3ODI1ODJjIiwiTW92aWVJZCI6
+        bnVsbCwiRnVsbE1vdmllTmFtZSI6bnVsbCwiTW92aWVOYW1lVmlzaWJsZSI6
+        bnVsbCwiQWxsU2hvd3RpbWVzIjpudWxsfV0sIk1vdmllSWQiOiI2OTNiNWFj
+        MC1kODBlLTRkNDAtOWRiOS01MzM0YWEwOGMzYzUifV0=
+    http_version: 
+  recorded_at: Sat, 14 Nov 2015 10:31:08 GMT
+- request:
+    method: get
+    uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/11/21&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/8.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - accept, authorization, origin,content-type
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Date:
+      - Sat, 14 Nov 2015 10:31:03 GMT
+      Content-Length:
+      - '977'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siTmFtZSI6Iumjoumkk+mBiuaIsu+8muiHqueUseW5u+Wkoue1gue1kOaI
+        sCIsIkZvcmVpZ25OYW1lIjoiVGhlIEh1bmdlciBHYW1lczogTW9ja2luZ2ph
+        eSAtIFBhcnQgMiIsIkFsbENhc3RzIjoi54+N5aau5L2b5Yue5YCr57WyLOWW
+        rOioseWTiOWlh+ajriAs5LyN6L+q5ZOI6YeM6YGcLOS8ium6l+iOjueZveeP
+        reWFi+e1sizpgKPmganmvKLmlq/msoMs5ZSQ57SN6JiH5b636JitLOWPsuS4
+        ueWIqeWcluWlhyIsIlJhdGVkIjoi6LyU5bCO57SaKFBHKSIsIlJ1bm5pbmdU
+        aW1lIjoiMuaZgjE35YiGIiwiUmVsZWFzZURhdGUiOiIyMDE1LzExLzIwIiwi
+        UmVjb21tZW5kR3JhZGUiOjAsIlBvc3RlckZpbGVuYW1lIjoiYXNzZXRzL2lt
+        Zy9tb3ZpZXMvVGhlSHVuZ2VyR2FtZXNNb2NraW5namF5UGFydDJfMTgweDI3
+        MF9Qb3N0ZXIuanBnIiwiUG9zdGVySW1hZ2VTb3VyY2UiOjAsIkdhbGxlcnlJ
+        bWFnZXMiOm51bGwsIlBlcmlvZFNob3d0aW1lIjpbeyJTYWxsZUlkIjpudWxs
+        LCJOYW1lIjpudWxsLCJTZWF0Q291bnQiOjAsIkVkaXRpb25fM0QiOmZhbHNl
+        LCJFZGl0aW9uX0RpZ2l0YWwiOnRydWUsIkVkaXRpb25fTGFuZ3VhZ2UiOiIi
+        LCJFZGl0aW9uX0FkZGl0aW9uYWxOb3RlIjoiIiwiQXNzaXN0YW50TmFtZSI6
+        IijmlbjkvY3niYgp6aOi6aST6YGK5oiy77ya6Ieq55Sx5bm75aSi57WC57WQ
+        5oiwIiwiUGxheWluZ0RhdGUiOiIyMDE1LTExLTIxVDAwOjAwOjAwIiwiU2hv
+        d3RpbWVzIjpbIjEwOjMwIiwiMTM6MDAiLCIxNTozMCIsIjE4OjAwIiwiMjA6
+        MzAiLCIyMzowMCJdLCJEQk9YQXJlYSI6bnVsbCwiVGhlYXRlcklkIjoiNWMy
+        ZDQ2OTctN2Y1NC00OTU1LTgwMGMtN2IzYWQ3ODI1ODJjIiwiTW92aWVJZCI6
+        bnVsbCwiRnVsbE1vdmllTmFtZSI6bnVsbCwiTW92aWVOYW1lVmlzaWJsZSI6
+        bnVsbCwiQWxsU2hvd3RpbWVzIjpudWxsfV0sIk1vdmllSWQiOiI2OTNiNWFj
+        MC1kODBlLTRkNDAtOWRiOS01MzM0YWEwOGMzYzUifV0=
+    http_version: 
+  recorded_at: Sat, 14 Nov 2015 10:31:08 GMT
+- request:
+    method: get
+    uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/11/19&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/8.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - accept, authorization, origin,content-type
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Date:
+      - Sat, 14 Nov 2015 10:31:03 GMT
+      Content-Length:
+      - '5867'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siTmFtZSI6IuaureWxjeaVmeaIsOWuiOWJhyIsIkZvcmVpZ25OYW1lIjoi
+        U0NPVVRTIEdVSURFIFRPIFRIRSBaT01CSUUgQVBPQ0FMWVBTRSIsIkFsbENh
+        c3RzIjoi5rS+57+g5YWL5Y+y55Om6L6b5qC8LOiNt+e1sumgk+WhnuWlhyzm
+        s7DorJ3ph4zkuLks6I6O5ouJ6aas5ouJ5bqr6Zu35oGpLOWkp+ihm+afr+Wx
+        iOe0jSIsIlJhdGVkIjoi6ZmQ5Yi257SaKFIpIiwiUnVubmluZ1RpbWUiOiIx
+        5pmCMzPliIYiLCJSZWxlYXNlRGF0ZSI6IjIwMTUvMTEvMTMiLCJSZWNvbW1l
+        bmRHcmFkZSI6MCwiUG9zdGVyRmlsZW5hbWUiOiJhc3NldHMvaW1nL21vdmll
+        cy9TQ09VVFNHVUlERVRPVEhFWk9NQklFQVBPQ0FMWVBTRV8xODB4MjcwX1Bv
+        c3Rlci5qcGciLCJQb3N0ZXJJbWFnZVNvdXJjZSI6MCwiR2FsbGVyeUltYWdl
+        cyI6bnVsbCwiUGVyaW9kU2hvd3RpbWUiOlt7IlNhbGxlSWQiOm51bGwsIk5h
+        bWUiOm51bGwsIlNlYXRDb3VudCI6MCwiRWRpdGlvbl8zRCI6ZmFsc2UsIkVk
+        aXRpb25fRGlnaXRhbCI6dHJ1ZSwiRWRpdGlvbl9MYW5ndWFnZSI6IiIsIkVk
+        aXRpb25fQWRkaXRpb25hbE5vdGUiOiIiLCJBc3Npc3RhbnROYW1lIjoiKOaV
+        uOS9jeeJiCnmrq3lsY3mlZnmiLDlrojliYciLCJQbGF5aW5nRGF0ZSI6IjIw
+        MTUtMTEtMTlUMDA6MDA6MDAiLCJTaG93dGltZXMiOlsiMTA6NDAiLCIxMjoz
+        MCIsIjE0OjIwIiwiMTY6MTAiLCIxODowMCIsIjE5OjUwIiwiMjE6NDAiLCIy
+        MzozMCJdLCJEQk9YQXJlYSI6bnVsbCwiVGhlYXRlcklkIjoiNWMyZDQ2OTct
+        N2Y1NC00OTU1LTgwMGMtN2IzYWQ3ODI1ODJjIiwiTW92aWVJZCI6bnVsbCwi
+        RnVsbE1vdmllTmFtZSI6bnVsbCwiTW92aWVOYW1lVmlzaWJsZSI6bnVsbCwi
+        QWxsU2hvd3RpbWVzIjpudWxsfV0sIk1vdmllSWQiOiI3YjJiZjEwOS03OWEy
+        LTQxN2MtODRjZS1jYThlYTNkZGRlZDMifSx7Ik5hbWUiOiLlianogIXngrrn
+        josiLCJGb3JlaWduTmFtZSI6IlF1ZWVuIFN0YWluIiwiQWxsQ2FzdHMiOiLo
+        iJLmt4cs5b2t5LqO5pmPIiwiUmF0ZWQiOiLmma7pgY3ntJooRykiLCJSdW5u
+        aW5nVGltZSI6IjHmmYIzOOWIhiIsIlJlbGVhc2VEYXRlIjoiMjAxNS8xMS8x
+        MyIsIlJlY29tbWVuZEdyYWRlIjowLCJQb3N0ZXJGaWxlbmFtZSI6ImFzc2V0
+        cy9pbWcvbW92aWVzL1F1ZWVuU3RhaW5fMTgweDI3MF9Qb3N0ZXIuanBnIiwi
+        UG9zdGVySW1hZ2VTb3VyY2UiOjAsIkdhbGxlcnlJbWFnZXMiOm51bGwsIlBl
+        cmlvZFNob3d0aW1lIjpbeyJTYWxsZUlkIjpudWxsLCJOYW1lIjpudWxsLCJT
+        ZWF0Q291bnQiOjAsIkVkaXRpb25fM0QiOmZhbHNlLCJFZGl0aW9uX0RpZ2l0
+        YWwiOnRydWUsIkVkaXRpb25fTGFuZ3VhZ2UiOiIiLCJFZGl0aW9uX0FkZGl0
+        aW9uYWxOb3RlIjoiIiwiQXNzaXN0YW50TmFtZSI6IijmlbjkvY3niYgp5Ymp
+        6ICF54K6546LIiwiUGxheWluZ0RhdGUiOiIyMDE1LTExLTE5VDAwOjAwOjAw
+        IiwiU2hvd3RpbWVzIjpbIjEwOjIwIiwiMTQ6MDAiLCIxNzo0MCIsIjE5OjIw
+        IiwiMjE6MjAiXSwiREJPWEFyZWEiOm51bGwsIlRoZWF0ZXJJZCI6IjVjMmQ0
+        Njk3LTdmNTQtNDk1NS04MDBjLTdiM2FkNzgyNTgyYyIsIk1vdmllSWQiOm51
+        bGwsIkZ1bGxNb3ZpZU5hbWUiOm51bGwsIk1vdmllTmFtZVZpc2libGUiOm51
+        bGwsIkFsbFNob3d0aW1lcyI6bnVsbH1dLCJNb3ZpZUlkIjoiNTZhYjMyMDMt
+        M2ViNy00YWYwLWIzOGEtOGE5ZTEzOTkyZGRlIn0seyJOYW1lIjoi6Zec6Y21
+        5pWR5o+077ya5be05aOrNjU3IiwiRm9yZWlnbk5hbWUiOiJCVVM2NTciLCJB
+        bGxDYXN0cyI6IuWCkeS9m+eRnui/quaBqeaRqeaguSzmiLTlpKvlt7Tmlq/l
+        uJ3loZQs5Yue5YuD54uE5bC85rSbLOWHseeJueazouaWr+aygyzojqvnkZ7p
+        jKLmlq/oq74s5ZCJ5aic5Y2h5ouJ6Ku+IiwiUmF0ZWQiOiLovJTlsI7ntJoo
+        UEcpIiwiUnVubmluZ1RpbWUiOiIx5pmCMzPliIYiLCJSZWxlYXNlRGF0ZSI6
+        IjIwMTUvMTEvMTMiLCJSZWNvbW1lbmRHcmFkZSI6MCwiUG9zdGVyRmlsZW5h
+        bWUiOiJhc3NldHMvaW1nL21vdmllcy9CVVM2NTdfMTgweDI3MF9Qb3N0ZXIu
+        anBnIiwiUG9zdGVySW1hZ2VTb3VyY2UiOjAsIkdhbGxlcnlJbWFnZXMiOm51
+        bGwsIlBlcmlvZFNob3d0aW1lIjpbeyJTYWxsZUlkIjpudWxsLCJOYW1lIjpu
+        dWxsLCJTZWF0Q291bnQiOjAsIkVkaXRpb25fM0QiOmZhbHNlLCJFZGl0aW9u
+        X0RpZ2l0YWwiOnRydWUsIkVkaXRpb25fTGFuZ3VhZ2UiOiIiLCJFZGl0aW9u
+        X0FkZGl0aW9uYWxOb3RlIjoiIiwiQXNzaXN0YW50TmFtZSI6IijmlbjkvY3n
+        iYgp6Zec6Y215pWR5o+077ya5be05aOrNjU3IiwiUGxheWluZ0RhdGUiOiIy
+        MDE1LTExLTE5VDAwOjAwOjAwIiwiU2hvd3RpbWVzIjpbIjEyOjEwIiwiMTU6
+        NTAiLCIxOTozMCIsIjIxOjEwIiwiMjM6MTAiXSwiREJPWEFyZWEiOm51bGws
+        IlRoZWF0ZXJJZCI6IjVjMmQ0Njk3LTdmNTQtNDk1NS04MDBjLTdiM2FkNzgy
+        NTgyYyIsIk1vdmllSWQiOm51bGwsIkZ1bGxNb3ZpZU5hbWUiOm51bGwsIk1v
+        dmllTmFtZVZpc2libGUiOm51bGwsIkFsbFNob3d0aW1lcyI6bnVsbH1dLCJN
+        b3ZpZUlkIjoiYTA3NTJkZmUtNTU3Mi00NzM3LWEyMGYtMzIwZDVjNDdhM2Nj
+        In0seyJOYW1lIjoiMDA35oOh6a2U5Zub5LyPIiwiRm9yZWlnbk5hbWUiOiJT
+        cGVjdHJlIiwiQWxsQ2FzdHMiOiLkuLnlsLzniL7lhYvpm7fmoLws6Zu35aSr
+        6IyD5oGp5pavIiwiUmF0ZWQiOiLovJTlsI7ntJooUEcpIiwiUnVubmluZ1Rp
+        bWUiOiIy5pmCMjjliIYiLCJSZWxlYXNlRGF0ZSI6IjIwMTUvMTEvMDUiLCJS
+        ZWNvbW1lbmRHcmFkZSI6MCwiUG9zdGVyRmlsZW5hbWUiOiJhc3NldHMvaW1n
+        L21vdmllcy9TcGVjdHJlXzE4MHgyNzBfUG9zdGVyLmpwZyIsIlBvc3Rlcklt
+        YWdlU291cmNlIjowLCJHYWxsZXJ5SW1hZ2VzIjpudWxsLCJQZXJpb2RTaG93
+        dGltZSI6W3siU2FsbGVJZCI6bnVsbCwiTmFtZSI6bnVsbCwiU2VhdENvdW50
+        IjowLCJFZGl0aW9uXzNEIjpmYWxzZSwiRWRpdGlvbl9EaWdpdGFsIjp0cnVl
+        LCJFZGl0aW9uX0xhbmd1YWdlIjoiIiwiRWRpdGlvbl9BZGRpdGlvbmFsTm90
+        ZSI6IiIsIkFzc2lzdGFudE5hbWUiOiIo5pW45L2N54mIKTAwN+aDoemtlOWb
+        m+S8jyIsIlBsYXlpbmdEYXRlIjoiMjAxNS0xMS0xOVQwMDowMDowMCIsIlNo
+        b3d0aW1lcyI6WyIxMDozMCIsIjExOjMwIiwiMTM6MjAiLCIxNDoyMCIsIjE1
+        OjIwIiwiMTY6MTAiLCIxNzoxMCIsIjE5OjAwIiwiMjA6MDAiLCIyMDo1MCIs
+        IjIxOjUwIiwiMjI6NTAiLCIyMzo0MCJdLCJEQk9YQXJlYSI6bnVsbCwiVGhl
+        YXRlcklkIjoiNWMyZDQ2OTctN2Y1NC00OTU1LTgwMGMtN2IzYWQ3ODI1ODJj
+        IiwiTW92aWVJZCI6bnVsbCwiRnVsbE1vdmllTmFtZSI6bnVsbCwiTW92aWVO
+        YW1lVmlzaWJsZSI6bnVsbCwiQWxsU2hvd3RpbWVzIjpudWxsfV0sIk1vdmll
+        SWQiOiJmNTY1MDg5MC05NWI2LTQ1MDUtYTk4YS03YzE5NDE1Mjc1YmYifSx7
+        Ik5hbWUiOiLlpKnoj5zlpKflu5oiLCJGb3JlaWduTmFtZSI6IkJ1cm50Iiwi
+        QWxsQ2FzdHMiOiLluIPokIrlvrfliKnluqvmn48s6Im+55Gq5rmv5pmu6YGc
+        LOW4reWuieWonOexs+WLkizkuLnlsLzniL7luIPniL4s54OP55Gq6IiS5pu8
+        IiwiUmF0ZWQiOiLkv53orbfntJooUCkiLCJSdW5uaW5nVGltZSI6IjHmmYI0
+        MeWIhiIsIlJlbGVhc2VEYXRlIjoiMjAxNS8xMC8zMCIsIlJlY29tbWVuZEdy
+        YWRlIjowLCJQb3N0ZXJGaWxlbmFtZSI6ImFzc2V0cy9pbWcvbW92aWVzL0J1
+        cm50XzE4MHgyNzBfUG9zdGVyLmpwZyIsIlBvc3RlckltYWdlU291cmNlIjow
+        LCJHYWxsZXJ5SW1hZ2VzIjpudWxsLCJQZXJpb2RTaG93dGltZSI6W3siU2Fs
+        bGVJZCI6bnVsbCwiTmFtZSI6bnVsbCwiU2VhdENvdW50IjowLCJFZGl0aW9u
+        XzNEIjpmYWxzZSwiRWRpdGlvbl9EaWdpdGFsIjp0cnVlLCJFZGl0aW9uX0xh
+        bmd1YWdlIjoiIiwiRWRpdGlvbl9BZGRpdGlvbmFsTm90ZSI6IiIsIkFzc2lz
+        dGFudE5hbWUiOiIo5pW45L2N54mIKeWkqeiPnOWkp+W7miIsIlBsYXlpbmdE
+        YXRlIjoiMjAxNS0xMS0xOVQwMDowMDowMCIsIlNob3d0aW1lcyI6WyIxMTow
+        MCIsIjEzOjEwIiwiMTc6MjAiLCIyMzowMCJdLCJEQk9YQXJlYSI6bnVsbCwi
+        VGhlYXRlcklkIjoiNWMyZDQ2OTctN2Y1NC00OTU1LTgwMGMtN2IzYWQ3ODI1
+        ODJjIiwiTW92aWVJZCI6bnVsbCwiRnVsbE1vdmllTmFtZSI6bnVsbCwiTW92
+        aWVOYW1lVmlzaWJsZSI6bnVsbCwiQWxsU2hvd3RpbWVzIjpudWxsfV0sIk1v
+        dmllSWQiOiIyZDE4ZTYyYy00NWQ5LTRjYjUtOTdmNi1lNWI2ZGIyZTRhNTYi
+        fSx7Ik5hbWUiOiLlsI/njovlrZAiLCJGb3JlaWduTmFtZSI6IlRoZSBMaXR0
+        bGUgUHJpbmNlIiwiQWxsQ2FzdHMiOiLnkarlurfojonkvZvkvIos55Gq6I6J
+        6Kmg5p+v6JKC5LqeLOeRnueni+m6peS6nueVtuaWryzlgpHlpKvluIPph4zl
+        kIks6Km55aeG5aOr5rOV6Jit5p+vIiwiUmF0ZWQiOiLmma7pgY3ntJooRyki
+        LCJSdW5uaW5nVGltZSI6IjHmmYI0N+WIhiIsIlJlbGVhc2VEYXRlIjoiMjAx
+        NS8xMC8yMyIsIlJlY29tbWVuZEdyYWRlIjowLCJQb3N0ZXJGaWxlbmFtZSI6
+        ImFzc2V0cy9pbWcvbW92aWVzL1RoZUxpdHRsZVByaW5jZV8xODB4MjcwX1Bv
+        c3Rlci5qcGciLCJQb3N0ZXJJbWFnZVNvdXJjZSI6MCwiR2FsbGVyeUltYWdl
+        cyI6bnVsbCwiUGVyaW9kU2hvd3RpbWUiOlt7IlNhbGxlSWQiOm51bGwsIk5h
+        bWUiOm51bGwsIlNlYXRDb3VudCI6MCwiRWRpdGlvbl8zRCI6ZmFsc2UsIkVk
+        aXRpb25fRGlnaXRhbCI6dHJ1ZSwiRWRpdGlvbl9MYW5ndWFnZSI6IuiLseaW
+        h+eJiCIsIkVkaXRpb25fQWRkaXRpb25hbE5vdGUiOiIiLCJBc3Npc3RhbnRO
+        YW1lIjoiKOaVuOS9jeKAp+iLseaWh+eJiCnlsI/njovlrZAiLCJQbGF5aW5n
+        RGF0ZSI6IjIwMTUtMTEtMTlUMDA6MDA6MDAiLCJTaG93dGltZXMiOlsiMTE6
+        MDAiLCIxNToxMCJdLCJEQk9YQXJlYSI6bnVsbCwiVGhlYXRlcklkIjoiNWMy
+        ZDQ2OTctN2Y1NC00OTU1LTgwMGMtN2IzYWQ3ODI1ODJjIiwiTW92aWVJZCI6
+        bnVsbCwiRnVsbE1vdmllTmFtZSI6bnVsbCwiTW92aWVOYW1lVmlzaWJsZSI6
+        bnVsbCwiQWxsU2hvd3RpbWVzIjpudWxsfV0sIk1vdmllSWQiOiIyY2JlODYy
+        Yy1lYmJkLTQyODEtYWNjYy1hZjBiZWJkMjZjMWEifSx7Ik5hbWUiOiLpq5jl
+        ubTntJrlr6bnv5LnlJ8iLCJGb3JlaWduTmFtZSI6IlRIRSBJTlRFUk4iLCJB
+        bGxDYXN0cyI6IuWuiea1t+eRn+WogSzli57li4Pni4TlsLzmtJss5a6J5b63
+        5pav6I235aeGLOiVvuWmrue+hee0oCIsIlJhdGVkIjoi5L+d6K2357SaKFAp
+        IiwiUnVubmluZ1RpbWUiOiIy5pmCMeWIhiIsIlJlbGVhc2VEYXRlIjoiMjAx
+        NS8wOS8yNSIsIlJlY29tbWVuZEdyYWRlIjowLCJQb3N0ZXJGaWxlbmFtZSI6
+        ImFzc2V0cy9pbWcvbW92aWVzL1RIRUlOVEVSTl8xODB4MjcwX1Bvc3Rlci5q
+        cGciLCJQb3N0ZXJJbWFnZVNvdXJjZSI6MCwiR2FsbGVyeUltYWdlcyI6bnVs
+        bCwiUGVyaW9kU2hvd3RpbWUiOlt7IlNhbGxlSWQiOm51bGwsIk5hbWUiOm51
+        bGwsIlNlYXRDb3VudCI6MCwiRWRpdGlvbl8zRCI6ZmFsc2UsIkVkaXRpb25f
+        RGlnaXRhbCI6dHJ1ZSwiRWRpdGlvbl9MYW5ndWFnZSI6IiIsIkVkaXRpb25f
+        QWRkaXRpb25hbE5vdGUiOiIiLCJBc3Npc3RhbnROYW1lIjoiKOaVuOS9jeeJ
+        iCnpq5jlubTntJrlr6bnv5LnlJ8iLCJQbGF5aW5nRGF0ZSI6IjIwMTUtMTEt
+        MTlUMDA6MDA6MDAiLCJTaG93dGltZXMiOlsiMTM6MDAiLCIxODoxMCJdLCJE
+        Qk9YQXJlYSI6bnVsbCwiVGhlYXRlcklkIjoiNWMyZDQ2OTctN2Y1NC00OTU1
+        LTgwMGMtN2IzYWQ3ODI1ODJjIiwiTW92aWVJZCI6bnVsbCwiRnVsbE1vdmll
+        TmFtZSI6bnVsbCwiTW92aWVOYW1lVmlzaWJsZSI6bnVsbCwiQWxsU2hvd3Rp
+        bWVzIjpudWxsfV0sIk1vdmllSWQiOiJjODU1YWYxOC01Njk1LTQ0ODAtOGI2
+        NC01YmFiODk4YjAwM2QifV0=
+    http_version: 
+  recorded_at: Sat, 14 Nov 2015 10:31:08 GMT
+- request:
+    method: get
+    uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/11/21&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/8.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - accept, authorization, origin,content-type
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Date:
+      - Sat, 14 Nov 2015 10:33:27 GMT
+      Content-Length:
+      - '977'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siTmFtZSI6Iumjoumkk+mBiuaIsu+8muiHqueUseW5u+Wkoue1gue1kOaI
+        sCIsIkZvcmVpZ25OYW1lIjoiVGhlIEh1bmdlciBHYW1lczogTW9ja2luZ2ph
+        eSAtIFBhcnQgMiIsIkFsbENhc3RzIjoi54+N5aau5L2b5Yue5YCr57WyLOWW
+        rOioseWTiOWlh+ajriAs5LyN6L+q5ZOI6YeM6YGcLOS8ium6l+iOjueZveeP
+        reWFi+e1sizpgKPmganmvKLmlq/msoMs5ZSQ57SN6JiH5b636JitLOWPsuS4
+        ueWIqeWcluWlhyIsIlJhdGVkIjoi6LyU5bCO57SaKFBHKSIsIlJ1bm5pbmdU
+        aW1lIjoiMuaZgjE35YiGIiwiUmVsZWFzZURhdGUiOiIyMDE1LzExLzIwIiwi
+        UmVjb21tZW5kR3JhZGUiOjAsIlBvc3RlckZpbGVuYW1lIjoiYXNzZXRzL2lt
+        Zy9tb3ZpZXMvVGhlSHVuZ2VyR2FtZXNNb2NraW5namF5UGFydDJfMTgweDI3
+        MF9Qb3N0ZXIuanBnIiwiUG9zdGVySW1hZ2VTb3VyY2UiOjAsIkdhbGxlcnlJ
+        bWFnZXMiOm51bGwsIlBlcmlvZFNob3d0aW1lIjpbeyJTYWxsZUlkIjpudWxs
+        LCJOYW1lIjpudWxsLCJTZWF0Q291bnQiOjAsIkVkaXRpb25fM0QiOmZhbHNl
+        LCJFZGl0aW9uX0RpZ2l0YWwiOnRydWUsIkVkaXRpb25fTGFuZ3VhZ2UiOiIi
+        LCJFZGl0aW9uX0FkZGl0aW9uYWxOb3RlIjoiIiwiQXNzaXN0YW50TmFtZSI6
+        IijmlbjkvY3niYgp6aOi6aST6YGK5oiy77ya6Ieq55Sx5bm75aSi57WC57WQ
+        5oiwIiwiUGxheWluZ0RhdGUiOiIyMDE1LTExLTIxVDAwOjAwOjAwIiwiU2hv
+        d3RpbWVzIjpbIjEwOjMwIiwiMTM6MDAiLCIxNTozMCIsIjE4OjAwIiwiMjA6
+        MzAiLCIyMzowMCJdLCJEQk9YQXJlYSI6bnVsbCwiVGhlYXRlcklkIjoiNWMy
+        ZDQ2OTctN2Y1NC00OTU1LTgwMGMtN2IzYWQ3ODI1ODJjIiwiTW92aWVJZCI6
+        bnVsbCwiRnVsbE1vdmllTmFtZSI6bnVsbCwiTW92aWVOYW1lVmlzaWJsZSI6
+        bnVsbCwiQWxsU2hvd3RpbWVzIjpudWxsfV0sIk1vdmllSWQiOiI2OTNiNWFj
+        MC1kODBlLTRkNDAtOWRiOS01MzM0YWEwOGMzYzUifV0=
+    http_version: 
+  recorded_at: Sat, 14 Nov 2015 10:33:32 GMT
 recorded_with: VCR 2.9.3
