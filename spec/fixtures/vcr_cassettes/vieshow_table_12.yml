@@ -27,17 +27,17 @@ http_interactions:
       Server:
       - Microsoft-IIS/7.5
       Set-Cookie:
-      - ASP.NET_SessionId=4tkdto45yuktuv45ubrh0arp; path=/; HttpOnly
-      - visSessionID=5a348dfbbde34b2a9756777d6c8ecad7; expires=Mon, 14-Dec-2015 10:24:37
+      - ASP.NET_SessionId=nmv5to45prpl3aeln0wrsina; path=/; HttpOnly
+      - visSessionID=8a406378048a4789909f08a7c710ba8c; expires=Mon, 14-Dec-2015 13:19:14
         GMT; path=/
       X-Aspnet-Version:
       - 2.0.50727
       X-Powered-By:
       - ASP.NET
       Date:
-      - Sat, 14 Nov 2015 10:24:37 GMT
+      - Sat, 14 Nov 2015 13:19:13 GMT
       Content-Length:
-      - '16342'
+      - '15828'
     body:
       encoding: UTF-8
       string: "\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\">\r\n<HTML>\r\n\t<HEAD>\r\n\t\t<title>\r\n\t\t\t***Vieshow
@@ -79,8 +79,6 @@ http_interactions:
         class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">10:35, 15:00</td>\r\n\t</tr><tr>\r\n\t\t<td
         colspan=\"2\"></td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesFilm\"
         colspan=\"2\">(DIG E)THE LITTLE PRINCE (G)</td>\r\n\t</tr><tr>\r\n\t\t<td
-        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 14 Sat</td><td
-        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">18:40</td>\r\n\t</tr><tr>\r\n\t\t<td
         class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 15 Sun</td><td
         class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">12:20, 18:40</td>\r\n\t</tr><tr>\r\n\t\t<td
         class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 16 Mon</td><td
@@ -99,8 +97,6 @@ http_interactions:
         class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">18:30</td>\r\n\t</tr><tr>\r\n\t\t<td
         colspan=\"2\"></td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesFilm\"
         colspan=\"2\">(DIG)BURNT (P)</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
-        valign=\"top\" colspan=\"1\">Nov 14 Sat</td><td class=\"PrintShowTimesSession\"
-        valign=\"top\" colspan=\"1\">20:40</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
         valign=\"top\" colspan=\"1\">Nov 15 Sun</td><td class=\"PrintShowTimesSession\"
         valign=\"top\" colspan=\"1\">10:00, 16:35, 20:40</td>\r\n\t</tr><tr>\r\n\t\t<td
         class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 16 Mon</td><td
@@ -115,7 +111,7 @@ http_interactions:
         21:10</td>\r\n\t</tr><tr>\r\n\t\t<td colspan=\"2\"></td>\r\n\t</tr><tr>\r\n\t\t<td
         class=\"PrintShowTimesFilm\" colspan=\"2\">(DIG)BUS 657 (PG15)</td>\r\n\t</tr><tr>\r\n\t\t<td
         class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 14 Sat</td><td
-        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">20:20, 00:25</td>\r\n\t</tr><tr>\r\n\t\t<td
+        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">00:25</td>\r\n\t</tr><tr>\r\n\t\t<td
         class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 15 Sun</td><td
         class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">09:55, 14:10,
         18:10, 20:20, 00:25</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
@@ -139,56 +135,53 @@ http_interactions:
         colspan=\"2\"></td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesFilm\"
         colspan=\"2\">(DIG)SCOUTS GUIDE TO THE ZOMBIE APOCALYPSE (R)</td>\r\n\t</tr><tr>\r\n\t\t<td
         class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 14 Sat</td><td
-        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">20:05, 22:00,
-        23:55</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\" valign=\"top\"
-        colspan=\"1\">Nov 15 Sun</td><td class=\"PrintShowTimesSession\" valign=\"top\"
-        colspan=\"1\">10:20, 12:15, 14:20, 16:15, 20:05, 22:00, 23:55</td>\r\n\t</tr><tr>\r\n\t\t<td
-        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 16 Mon</td><td
-        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">10:50, 12:45,
-        14:45, 16:45, 20:35, 22:30, 00:25</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
-        valign=\"top\" colspan=\"1\">Nov 17 Tue</td><td class=\"PrintShowTimesSession\"
-        valign=\"top\" colspan=\"1\">10:50, 12:45, 14:45, 16:45, 20:35, 22:30, 00:25</td>\r\n\t</tr><tr>\r\n\t\t<td
-        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 18 Wed</td><td
-        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">10:50, 12:45,
-        14:45, 16:45, 20:35, 22:30, 00:25</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
-        valign=\"top\" colspan=\"1\">Nov 19 Thu</td><td class=\"PrintShowTimesSession\"
-        valign=\"top\" colspan=\"1\">10:50, 12:45, 14:45, 16:45, 20:35, 22:30, 00:25</td>\r\n\t</tr><tr>\r\n\t\t<td
-        colspan=\"2\"></td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesFilm\"
-        colspan=\"2\">(DIG)SPECTRE (PG15)</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
-        valign=\"top\" colspan=\"1\">Nov 14 Sat</td><td class=\"PrintShowTimesSession\"
-        valign=\"top\" colspan=\"1\">19:00, 19:30, 21:50, 22:20, 23:10, 00:40</td>\r\n\t</tr><tr>\r\n\t\t<td
+        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">22:00, 23:55</td>\r\n\t</tr><tr>\r\n\t\t<td
         class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 15 Sun</td><td
-        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">10:30, 11:00,
-        12:10, 13:20, 13:50, 15:00, 16:10, 16:40, 17:50, 19:00, 19:30, 21:50, 22:20,
+        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">10:20, 12:15,
+        14:20, 16:15, 20:05, 22:00, 23:55</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
+        valign=\"top\" colspan=\"1\">Nov 16 Mon</td><td class=\"PrintShowTimesSession\"
+        valign=\"top\" colspan=\"1\">10:50, 12:45, 14:45, 16:45, 20:35, 22:30, 00:25</td>\r\n\t</tr><tr>\r\n\t\t<td
+        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 17 Tue</td><td
+        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">10:50, 12:45,
+        14:45, 16:45, 20:35, 22:30, 00:25</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
+        valign=\"top\" colspan=\"1\">Nov 18 Wed</td><td class=\"PrintShowTimesSession\"
+        valign=\"top\" colspan=\"1\">10:50, 12:45, 14:45, 16:45, 20:35, 22:30, 00:25</td>\r\n\t</tr><tr>\r\n\t\t<td
+        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 19 Thu</td><td
+        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">10:50, 12:45,
+        14:45, 16:45, 20:35, 22:30, 00:25</td>\r\n\t</tr><tr>\r\n\t\t<td colspan=\"2\"></td>\r\n\t</tr><tr>\r\n\t\t<td
+        class=\"PrintShowTimesFilm\" colspan=\"2\">(DIG)SPECTRE (PG15)</td>\r\n\t</tr><tr>\r\n\t\t<td
+        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 14 Sat</td><td
+        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">21:50, 22:20,
         23:10, 00:40</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\" valign=\"top\"
-        colspan=\"1\">Nov 16 Mon</td><td class=\"PrintShowTimesSession\" valign=\"top\"
-        colspan=\"1\">11:00, 11:30, 12:40, 13:50, 14:20, 15:30, 16:40, 17:10, 18:20,
-        19:30, 20:00, 22:20, 22:50, 23:40</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
-        valign=\"top\" colspan=\"1\">Nov 17 Tue</td><td class=\"PrintShowTimesSession\"
+        colspan=\"1\">Nov 15 Sun</td><td class=\"PrintShowTimesSession\" valign=\"top\"
+        colspan=\"1\">10:30, 11:00, 12:10, 13:20, 13:50, 15:00, 16:10, 16:40, 17:50,
+        19:00, 19:30, 21:50, 22:20, 23:10, 00:40</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
+        valign=\"top\" colspan=\"1\">Nov 16 Mon</td><td class=\"PrintShowTimesSession\"
         valign=\"top\" colspan=\"1\">11:00, 11:30, 12:40, 13:50, 14:20, 15:30, 16:40,
         17:10, 18:20, 19:30, 20:00, 22:20, 22:50, 23:40</td>\r\n\t</tr><tr>\r\n\t\t<td
-        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 18 Wed</td><td
+        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 17 Tue</td><td
         class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">11:00, 11:30,
         12:40, 13:50, 14:20, 15:30, 16:40, 17:10, 18:20, 19:30, 20:00, 22:20, 22:50,
         23:40</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\" valign=\"top\"
-        colspan=\"1\">Nov 19 Thu</td><td class=\"PrintShowTimesSession\" valign=\"top\"
+        colspan=\"1\">Nov 18 Wed</td><td class=\"PrintShowTimesSession\" valign=\"top\"
         colspan=\"1\">11:00, 11:30, 12:40, 13:50, 14:20, 15:30, 16:40, 17:10, 18:20,
-        19:30, 20:00, 22:20, 22:50, 23:40</td>\r\n\t</tr><tr>\r\n\t\t<td colspan=\"2\"></td>\r\n\t</tr><tr>\r\n\t\t<td
-        class=\"PrintShowTimesFilm\" colspan=\"2\">(DIG)THE INTERN (P)</td>\r\n\t</tr><tr>\r\n\t\t<td
-        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 14 Sat</td><td
-        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">20:45</td>\r\n\t</tr><tr>\r\n\t\t<td
-        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 15 Sun</td><td
-        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">11:45, 20:45</td>\r\n\t</tr><tr>\r\n\t\t<td
-        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 16 Mon</td><td
-        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">12:15, 21:15</td>\r\n\t</tr><tr>\r\n\t\t<td
-        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 17 Tue</td><td
-        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">12:15, 21:15</td>\r\n\t</tr><tr>\r\n\t\t<td
-        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 18 Wed</td><td
-        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">12:15, 21:15</td>\r\n\t</tr><tr>\r\n\t\t<td
-        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 19 Thu</td><td
-        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">12:15, 21:15</td>\r\n\t</tr><tr>\r\n\t\t<td
+        19:30, 20:00, 22:20, 22:50, 23:40</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
+        valign=\"top\" colspan=\"1\">Nov 19 Thu</td><td class=\"PrintShowTimesSession\"
+        valign=\"top\" colspan=\"1\">11:00, 11:30, 12:40, 13:50, 14:20, 15:30, 16:40,
+        17:10, 18:20, 19:30, 20:00, 22:20, 22:50, 23:40</td>\r\n\t</tr><tr>\r\n\t\t<td
         colspan=\"2\"></td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesFilm\"
-        colspan=\"2\">(DIG)THE LAST WITCH HUNTER (PG)</td>\r\n\t</tr><tr>\r\n\t\t<td
+        colspan=\"2\">(DIG)THE INTERN (P)</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
+        valign=\"top\" colspan=\"1\">Nov 15 Sun</td><td class=\"PrintShowTimesSession\"
+        valign=\"top\" colspan=\"1\">11:45, 20:45</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
+        valign=\"top\" colspan=\"1\">Nov 16 Mon</td><td class=\"PrintShowTimesSession\"
+        valign=\"top\" colspan=\"1\">12:15, 21:15</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
+        valign=\"top\" colspan=\"1\">Nov 17 Tue</td><td class=\"PrintShowTimesSession\"
+        valign=\"top\" colspan=\"1\">12:15, 21:15</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
+        valign=\"top\" colspan=\"1\">Nov 18 Wed</td><td class=\"PrintShowTimesSession\"
+        valign=\"top\" colspan=\"1\">12:15, 21:15</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
+        valign=\"top\" colspan=\"1\">Nov 19 Thu</td><td class=\"PrintShowTimesSession\"
+        valign=\"top\" colspan=\"1\">12:15, 21:15</td>\r\n\t</tr><tr>\r\n\t\t<td colspan=\"2\"></td>\r\n\t</tr><tr>\r\n\t\t<td
+        class=\"PrintShowTimesFilm\" colspan=\"2\">(DIG)THE LAST WITCH HUNTER (PG)</td>\r\n\t</tr><tr>\r\n\t\t<td
         class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 14 Sat</td><td
         class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">22:15</td>\r\n\t</tr><tr>\r\n\t\t<td
         class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 15 Sun</td><td
@@ -204,50 +197,49 @@ http_interactions:
         colspan=\"2\"></td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesFilm\"
         colspan=\"2\">(DIG)THE LAST WOMEN STANDING (G)</td>\r\n\t</tr><tr>\r\n\t\t<td
         class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 14 Sat</td><td
-        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">18:25, 20:30,
-        22:30, 00:30</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\" valign=\"top\"
-        colspan=\"1\">Nov 15 Sun</td><td class=\"PrintShowTimesSession\" valign=\"top\"
-        colspan=\"1\">10:10, 12:05, 14:15, 16:20, 18:25, 20:30, 22:30, 00:30</td>\r\n\t</tr><tr>\r\n\t\t<td
-        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 16 Mon</td><td
-        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">10:40, 12:35,
-        14:40, 16:50, 18:55, 21:00, 23:00</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
-        valign=\"top\" colspan=\"1\">Nov 17 Tue</td><td class=\"PrintShowTimesSession\"
-        valign=\"top\" colspan=\"1\">10:40, 12:35, 14:40, 16:50, 18:55, 21:00, 23:00</td>\r\n\t</tr><tr>\r\n\t\t<td
-        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 18 Wed</td><td
-        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">10:40, 12:35,
-        14:40, 16:50, 18:55, 21:00, 23:00</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
-        valign=\"top\" colspan=\"1\">Nov 19 Thu</td><td class=\"PrintShowTimesSession\"
-        valign=\"top\" colspan=\"1\">10:40, 12:35, 14:40, 16:50, 18:55, 21:00, 23:00</td>\r\n\t</tr><tr>\r\n\t\t<td
-        colspan=\"2\"></td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesFilm\"
-        colspan=\"2\">(DIG)THE MARTIAN (P)</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
-        valign=\"top\" colspan=\"1\">Nov 14 Sat</td><td class=\"PrintShowTimesSession\"
-        valign=\"top\" colspan=\"1\">22:50</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
-        valign=\"top\" colspan=\"1\">Nov 15 Sun</td><td class=\"PrintShowTimesSession\"
-        valign=\"top\" colspan=\"1\">22:50</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
-        valign=\"top\" colspan=\"1\">Nov 16 Mon</td><td class=\"PrintShowTimesSession\"
-        valign=\"top\" colspan=\"1\">23:20</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
-        valign=\"top\" colspan=\"1\">Nov 17 Tue</td><td class=\"PrintShowTimesSession\"
-        valign=\"top\" colspan=\"1\">23:20</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
-        valign=\"top\" colspan=\"1\">Nov 18 Wed</td><td class=\"PrintShowTimesSession\"
-        valign=\"top\" colspan=\"1\">23:20</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
-        valign=\"top\" colspan=\"1\">Nov 19 Thu</td><td class=\"PrintShowTimesSession\"
-        valign=\"top\" colspan=\"1\">23:20</td>\r\n\t</tr><tr>\r\n\t\t<td colspan=\"2\"></td>\r\n\t</tr><tr>\r\n\t\t<td
-        class=\"PrintShowTimesFilm\" colspan=\"2\">(IMAX)SPECTRE (PG15)</td>\r\n\t</tr><tr>\r\n\t\t<td
-        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 14 Sat</td><td
-        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">21:10, 00:00</td>\r\n\t</tr><tr>\r\n\t\t<td
+        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">22:30, 00:30</td>\r\n\t</tr><tr>\r\n\t\t<td
         class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 15 Sun</td><td
-        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">09:50, 12:40,
-        15:30, 18:20, 21:10, 00:00</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
+        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">10:10, 12:05,
+        14:15, 16:20, 18:25, 20:30, 22:30, 00:30</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
         valign=\"top\" colspan=\"1\">Nov 16 Mon</td><td class=\"PrintShowTimesSession\"
-        valign=\"top\" colspan=\"1\">10:20, 13:10, 16:00, 18:50, 21:40, 00:30</td>\r\n\t</tr><tr>\r\n\t\t<td
+        valign=\"top\" colspan=\"1\">10:40, 12:35, 14:40, 16:50, 18:55, 21:00, 23:00</td>\r\n\t</tr><tr>\r\n\t\t<td
         class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 17 Tue</td><td
+        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">10:40, 12:35,
+        14:40, 16:50, 18:55, 21:00, 23:00</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
+        valign=\"top\" colspan=\"1\">Nov 18 Wed</td><td class=\"PrintShowTimesSession\"
+        valign=\"top\" colspan=\"1\">10:40, 12:35, 14:40, 16:50, 18:55, 21:00, 23:00</td>\r\n\t</tr><tr>\r\n\t\t<td
+        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 19 Thu</td><td
+        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">10:40, 12:35,
+        14:40, 16:50, 18:55, 21:00, 23:00</td>\r\n\t</tr><tr>\r\n\t\t<td colspan=\"2\"></td>\r\n\t</tr><tr>\r\n\t\t<td
+        class=\"PrintShowTimesFilm\" colspan=\"2\">(DIG)THE MARTIAN (P)</td>\r\n\t</tr><tr>\r\n\t\t<td
+        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 14 Sat</td><td
+        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">22:50</td>\r\n\t</tr><tr>\r\n\t\t<td
+        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 15 Sun</td><td
+        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">22:50</td>\r\n\t</tr><tr>\r\n\t\t<td
+        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 16 Mon</td><td
+        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">23:20</td>\r\n\t</tr><tr>\r\n\t\t<td
+        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 17 Tue</td><td
+        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">23:20</td>\r\n\t</tr><tr>\r\n\t\t<td
+        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 18 Wed</td><td
+        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">23:20</td>\r\n\t</tr><tr>\r\n\t\t<td
+        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 19 Thu</td><td
+        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">23:20</td>\r\n\t</tr><tr>\r\n\t\t<td
+        colspan=\"2\"></td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesFilm\"
+        colspan=\"2\">(IMAX)SPECTRE (PG15)</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
+        valign=\"top\" colspan=\"1\">Nov 14 Sat</td><td class=\"PrintShowTimesSession\"
+        valign=\"top\" colspan=\"1\">00:00</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
+        valign=\"top\" colspan=\"1\">Nov 15 Sun</td><td class=\"PrintShowTimesSession\"
+        valign=\"top\" colspan=\"1\">09:50, 12:40, 15:30, 18:20, 21:10, 00:00</td>\r\n\t</tr><tr>\r\n\t\t<td
+        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 16 Mon</td><td
         class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">10:20, 13:10,
         16:00, 18:50, 21:40, 00:30</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
-        valign=\"top\" colspan=\"1\">Nov 18 Wed</td><td class=\"PrintShowTimesSession\"
+        valign=\"top\" colspan=\"1\">Nov 17 Tue</td><td class=\"PrintShowTimesSession\"
         valign=\"top\" colspan=\"1\">10:20, 13:10, 16:00, 18:50, 21:40, 00:30</td>\r\n\t</tr><tr>\r\n\t\t<td
-        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 19 Thu</td><td
+        class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 18 Wed</td><td
         class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">10:20, 13:10,
-        16:00, 18:50, 21:40, 00:30</td>\r\n\t</tr>\r\n</table>\r\n\t\t\t</form>\r\n\t</body>\r\n</HTML>\r\n"
+        16:00, 18:50, 21:40, 00:30</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
+        valign=\"top\" colspan=\"1\">Nov 19 Thu</td><td class=\"PrintShowTimesSession\"
+        valign=\"top\" colspan=\"1\">10:20, 13:10, 16:00, 18:50, 21:40, 00:30</td>\r\n\t</tr>\r\n</table>\r\n\t\t\t</form>\r\n\t</body>\r\n</HTML>\r\n"
     http_version: 
-  recorded_at: Sat, 14 Nov 2015 10:24:40 GMT
+  recorded_at: Sat, 14 Nov 2015 13:19:16 GMT
 recorded_with: VCR 2.9.3
