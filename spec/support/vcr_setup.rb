@@ -20,6 +20,7 @@ HOUR_PART = 0..1
 ADD_24 = 24
 SEC_PART = 17..18
 ZERO_SEC = '00'
+LANGUAGE = %w(chinese english)
 
 VCR.configure do |config|
   config.cassette_library_dir = './spec/fixtures/vcr_cassettes'
