@@ -21,6 +21,9 @@ ADD_24 = 24
 SEC_PART = 17..18
 ZERO_SEC = '00'
 LANGUAGE = %w(chinese english)
+RANDOM_STRING = (PARTIAL_NAME).map { A_TO_Z.to_a[rand(MAX_ALPHABET)] }.join
+MONTH_NUM = ('1'..'12').to_a
+DATE_NUM = ('1'..'31').to_a
 
 VCR.configure do |config|
   config.cassette_library_dir = './spec/fixtures/vcr_cassettes'

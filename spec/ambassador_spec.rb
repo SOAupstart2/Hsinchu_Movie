@@ -25,6 +25,35 @@ describe 'Get film information' do
   end
 end
 
+describe 'Get show times for a film' do
+  AMBASSADOR_TEST_SITES.each do |site|
+    LANGUAGE.each do |lang|
+      it "should get viewing times for this film in #{lang}" do
+        VCR.use_cassette("ambassador_table_#{site}_#{lang}") do
+          cinema = HsinChuMovie::Ambassador.new(site, lang)
+          one_movie = yml_load("#{AMB_FIXTURES}name_#{site}_#{lang}.yml").sample
+          # Films are saved as UPPERCASE but search should pass any case
+          cinema.film_times(one_movie.downcase).each do |film, date_times|
+            film.must_include one_movie
+            date_times.keys.each do |date|
+              nums_in_date = date.split('/')
+              MONTH_NUM.must_include nums_in_date[1]
+              DATE_NUM.must_include nums_in_date.last
+              # words_in_date = date.split
+              # MONTHS.must_include words_in_date.first
+              # DAYS.must_include words_in_date.last
+            end; end; end; end; end
+  end
+  AMBASSADOR_TEST_SITES.each do |site|
+    LANGUAGE.each do |lang|
+      it 'should return empty array for random string' do
+        VCR.use_cassette("ambassador_table_#{site}_#{lang}") do
+          cinema = HsinChuMovie::Ambassador.new(site, lang)
+          cinema.film_times(RANDOM_STRING).must_be_empty
+        end; end; end
+  end
+end
+
 describe 'Get films after a given time on given day' do
   AMBASSADOR_TEST_SITES.each do |site|
     LANGUAGE.each do |lang|
@@ -67,11 +96,3 @@ describe 'Get films after a given time on given day' do
               end; end; end; end; end; end
   end
 end
-
-# describe 'Outside of 1 and 14 must fail' do
-#   FAIL_SITES.each do |site|
-#     it "must fail for #{site}" do
-#       # HsinChuMovie::Vieshow.new(site.to_i).must_fail
-#     end
-#   end
-# end

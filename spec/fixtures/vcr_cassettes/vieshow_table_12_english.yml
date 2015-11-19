@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://sales.vscinemas.com.tw/ticketing/visPrintShowTimes.aspx?visCinemaID=0012
+    uri: http://sales.vscinemas.com.tw/ticketing/visPrintShowTimes.aspx?visCinemaID=0012&visLang=1
     body:
       encoding: US-ASCII
       string: ''
@@ -27,17 +27,17 @@ http_interactions:
       Server:
       - Microsoft-IIS/7.5
       Set-Cookie:
-      - ASP.NET_SessionId=22wzjgvpovr4lg45ml4mhhv1; path=/; HttpOnly
-      - visSessionID=f5080eda35364c3da41a4d6ddacea58a; expires=Sat, 19-Dec-2015 04:15:29
+      - ASP.NET_SessionId=eddjbl55egskjf55ijphjv3w; path=/; HttpOnly
+      - visSessionID=40b71c08669248bd81993a44a1314f01; expires=Sat, 19-Dec-2015 06:07:44
         GMT; path=/
       X-Aspnet-Version:
       - 2.0.50727
       X-Powered-By:
       - ASP.NET
       Date:
-      - Thu, 19 Nov 2015 04:15:28 GMT
+      - Thu, 19 Nov 2015 06:07:44 GMT
       Content-Length:
-      - '25034'
+      - '25006'
     body:
       encoding: UTF-8
       string: "\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\">\r\n<HTML>\r\n\t<HEAD>\r\n\t\t<title>\r\n\t\t\t***Vieshow
@@ -49,7 +49,7 @@ http_interactions:
         must proceed visStyles.css, so to override the default styles if requested
         -->\r\n\t\t<LINK href=\"visStylesUser.css\" type=\"text/css\" rel=\"stylesheet\">\r\n\t</HEAD>\r\n\t<body
         MS_POSITIONING=\"GridLayout\">\r\n\t\t<form name=\"Form1\" method=\"post\"
-        action=\"visPrintShowTimes.aspx?visCinemaID=0012\" id=\"Form1\">\r\n<input
+        action=\"visPrintShowTimes.aspx?visCinemaID=0012&amp;visLang=1\" id=\"Form1\">\r\n<input
         type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\" value=\"/wEPDwULLTEwMzQ3Mjk5MzMPZBYEAgEPFgIeBFRleHQFFSoqKlZpZXNob3cgQ2luZW1hcyoqKmQCAw9kFgRmDxYEHgNzcmMFIkltYWdlcy9QcmludGFibGVMaXN0aW5nc0hlYWRlci5naWYeBUNsYXNzBRhJbWFnZVByaW50TGlzdGluZ3NIZWFkZXJkAgMPDxYEHgVXaWR0aBsAAAAAAACEQAEAAAAeBF8hU0ICgAJkZGT5mKGxhoS0nuX/bIKN/Ky7v46pnA==\"
         />\r\n\r\n\t\t    <table cellpadding=0 cellspacing=0 width=560 class=\"PrintShowTimesHeaderTable\">\r\n\t\t
         \       <tr>\r\n\t\t            <td valign=\"middle\"><img src=\"Images/PrintableListingsHeader.gif\"
@@ -104,7 +104,7 @@ http_interactions:
         colspan=\"2\"></td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesFilm\"
         colspan=\"2\">(DIG E)THE LITTLE PRINCE (G)</td>\r\n\t</tr><tr>\r\n\t\t<td
         class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 19 Thu</td><td
-        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">12:50, 19:10</td>\r\n\t</tr><tr>\r\n\t\t<td
+        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">19:10</td>\r\n\t</tr><tr>\r\n\t\t<td
         class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 20 Fri</td><td
         class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">17:40</td>\r\n\t</tr><tr>\r\n\t\t<td
         class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 21 Sat</td><td
@@ -187,7 +187,7 @@ http_interactions:
         class=\"PrintShowTimesFilm\" colspan=\"2\">(DIG)SCOUTS GUIDE TO THE ZOMBIE
         APOCALYPSE (R)</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
         valign=\"top\" colspan=\"1\">Nov 19 Thu</td><td class=\"PrintShowTimesSession\"
-        valign=\"top\" colspan=\"1\">12:45, 14:45, 16:45, 20:35, 22:30, 00:25</td>\r\n\t</tr><tr>\r\n\t\t<td
+        valign=\"top\" colspan=\"1\">14:45, 16:45, 20:35, 22:30, 00:25</td>\r\n\t</tr><tr>\r\n\t\t<td
         class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 20 Fri</td><td
         class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">09:35, 15:45,
         23:40</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\" valign=\"top\"
@@ -225,8 +225,8 @@ http_interactions:
         22:00</td>\r\n\t</tr><tr>\r\n\t\t<td colspan=\"2\"></td>\r\n\t</tr><tr>\r\n\t\t<td
         class=\"PrintShowTimesFilm\" colspan=\"2\">(DIG)SPECTRE (PG15)</td>\r\n\t</tr><tr>\r\n\t\t<td
         class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 19 Thu</td><td
-        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">12:40, 13:50,
-        14:20, 15:30, 16:40, 17:10, 18:20, 19:30, 20:00, 22:20, 22:50, 23:40</td>\r\n\t</tr><tr>\r\n\t\t<td
+        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">14:20, 15:30,
+        16:40, 17:10, 18:20, 19:30, 20:00, 22:20, 22:50, 23:40</td>\r\n\t</tr><tr>\r\n\t\t<td
         class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 20 Fri</td><td
         class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">10:10, 12:55,
         13:35, 15:40, 16:20, 18:25, 19:05, 21:10, 21:50, 23:55, 00:35</td>\r\n\t</tr><tr>\r\n\t\t<td
@@ -306,8 +306,8 @@ http_interactions:
         colspan=\"2\"></td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesFilm\"
         colspan=\"2\">(DIG)THE LAST WOMEN STANDING (G)</td>\r\n\t</tr><tr>\r\n\t\t<td
         class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 19 Thu</td><td
-        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">12:35, 14:40,
-        16:50, 18:55, 21:00, 23:00</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
+        class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">14:40, 16:50,
+        18:55, 21:00, 23:00</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
         valign=\"top\" colspan=\"1\">Nov 20 Fri</td><td class=\"PrintShowTimesSession\"
         valign=\"top\" colspan=\"1\">11:20, 15:25, 19:40, 23:45</td>\r\n\t</tr><tr>\r\n\t\t<td
         class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 21 Sat</td><td
@@ -350,7 +350,7 @@ http_interactions:
         colspan=\"2\"></td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesFilm\"
         colspan=\"2\">(IMAX)SPECTRE (PG15)</td>\r\n\t</tr><tr>\r\n\t\t<td class=\"PrintShowTimesDay\"
         valign=\"top\" colspan=\"1\">Nov 19 Thu</td><td class=\"PrintShowTimesSession\"
-        valign=\"top\" colspan=\"1\">13:10, 16:00, 18:50, 21:40, 00:30</td>\r\n\t</tr><tr>\r\n\t\t<td
+        valign=\"top\" colspan=\"1\">16:00, 18:50, 21:40, 00:30</td>\r\n\t</tr><tr>\r\n\t\t<td
         class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 20 Fri</td><td
         class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">14:40, 20:00</td>\r\n\t</tr><tr>\r\n\t\t<td
         class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 21 Sat</td><td
@@ -366,5 +366,5 @@ http_interactions:
         class=\"PrintShowTimesDay\" valign=\"top\" colspan=\"1\">Nov 26 Thu</td><td
         class=\"PrintShowTimesSession\" valign=\"top\" colspan=\"1\">15:10, 20:30</td>\r\n\t</tr>\r\n</table>\r\n\t\t\t</form>\r\n\t</body>\r\n</HTML>\r\n"
     http_version: 
-  recorded_at: Thu, 19 Nov 2015 04:15:33 GMT
+  recorded_at: Thu, 19 Nov 2015 06:07:48 GMT
 recorded_with: VCR 2.9.3

@@ -33,7 +33,7 @@ http_interactions:
       X-Powered-By:
       - ASP.NET
       Date:
-      - Thu, 19 Nov 2015 04:15:22 GMT
+      - Thu, 19 Nov 2015 06:07:41 GMT
     body:
       encoding: ASCII-8BIT
       string: !binary |-
@@ -1283,7 +1283,7 @@ http_interactions:
         ICAgICB9DQoNCiAgICAgICAgfSkoKTsNCiAgICA8L3NjcmlwdD4NCg0KPC9i
         b2R5Pg0KPC9odG1sPiA=
     http_version: 
-  recorded_at: Thu, 19 Nov 2015 04:15:31 GMT
+  recorded_at: Thu, 19 Nov 2015 06:07:50 GMT
 - request:
     method: get
     uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetScreeningDateListForTheater/?theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
@@ -1323,14 +1323,14 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST, PUT, DELETE, OPTIONS
       Date:
-      - Thu, 19 Nov 2015 04:15:31 GMT
+      - Thu, 19 Nov 2015 06:07:49 GMT
       Content-Length:
       - '157'
     body:
       encoding: UTF-8
       string: '["2015/11/19","2015/11/20","2015/11/21","2015/11/22","2015/11/23","2015/11/24","2015/11/25","2015/11/26","2015/12/17","2015/12/18","2015/12/19","2015/12/20"]'
     http_version: 
-  recorded_at: Thu, 19 Nov 2015 04:15:31 GMT
+  recorded_at: Thu, 19 Nov 2015 06:07:50 GMT
 - request:
     method: get
     uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/11/19&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
@@ -1370,7 +1370,7 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST, PUT, DELETE, OPTIONS
       Date:
-      - Thu, 19 Nov 2015 04:15:31 GMT
+      - Thu, 19 Nov 2015 06:07:49 GMT
       Content-Length:
       - '5867'
     body:
@@ -1508,7 +1508,7 @@ http_interactions:
         bWVzIjpudWxsfV0sIk1vdmllSWQiOiJjODU1YWYxOC01Njk1LTQ0ODAtOGI2
         NC01YmFiODk4YjAwM2QifV0=
     http_version: 
-  recorded_at: Thu, 19 Nov 2015 04:15:31 GMT
+  recorded_at: Thu, 19 Nov 2015 06:07:50 GMT
 - request:
     method: get
     uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/11/20&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
@@ -1548,7 +1548,7 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST, PUT, DELETE, OPTIONS
       Date:
-      - Thu, 19 Nov 2015 04:15:31 GMT
+      - Thu, 19 Nov 2015 06:07:49 GMT
       Content-Length:
       - '5178'
     body:
@@ -1671,7 +1671,7 @@ http_interactions:
         b3ZpZUlkIjoiZjU2NTA4OTAtOTViNi00NTA1LWE5OGEtN2MxOTQxNTI3NWJm
         In1d
     http_version: 
-  recorded_at: Thu, 19 Nov 2015 04:15:31 GMT
+  recorded_at: Thu, 19 Nov 2015 06:07:50 GMT
 - request:
     method: get
     uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/11/21&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
@@ -1711,7 +1711,7 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST, PUT, DELETE, OPTIONS
       Date:
-      - Thu, 19 Nov 2015 04:15:31 GMT
+      - Thu, 19 Nov 2015 06:07:49 GMT
       Content-Length:
       - '5194'
     body:
@@ -1834,7 +1834,7 @@ http_interactions:
         dGltZXMiOm51bGx9XSwiTW92aWVJZCI6ImY1NjUwODkwLTk1YjYtNDUwNS1h
         OThhLTdjMTk0MTUyNzViZiJ9XQ==
     http_version: 
-  recorded_at: Thu, 19 Nov 2015 04:15:31 GMT
+  recorded_at: Thu, 19 Nov 2015 06:07:50 GMT
 - request:
     method: get
     uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/11/22&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
@@ -1874,7 +1874,7 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST, PUT, DELETE, OPTIONS
       Date:
-      - Thu, 19 Nov 2015 04:15:31 GMT
+      - Thu, 19 Nov 2015 06:07:49 GMT
       Content-Length:
       - '5186'
     body:
@@ -1997,7 +1997,7 @@ http_interactions:
         dWxsfV0sIk1vdmllSWQiOiJmNTY1MDg5MC05NWI2LTQ1MDUtYTk4YS03YzE5
         NDE1Mjc1YmYifV0=
     http_version: 
-  recorded_at: Thu, 19 Nov 2015 04:15:31 GMT
+  recorded_at: Thu, 19 Nov 2015 06:07:50 GMT
 - request:
     method: get
     uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/11/23&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
@@ -2037,7 +2037,7 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST, PUT, DELETE, OPTIONS
       Date:
-      - Thu, 19 Nov 2015 04:15:31 GMT
+      - Thu, 19 Nov 2015 06:07:49 GMT
       Content-Length:
       - '4387'
     body:
@@ -2142,7 +2142,7 @@ http_interactions:
         aG93dGltZXMiOm51bGx9XSwiTW92aWVJZCI6ImY1NjUwODkwLTk1YjYtNDUw
         NS1hOThhLTdjMTk0MTUyNzViZiJ9XQ==
     http_version: 
-  recorded_at: Thu, 19 Nov 2015 04:15:31 GMT
+  recorded_at: Thu, 19 Nov 2015 06:07:50 GMT
 - request:
     method: get
     uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/11/24&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
@@ -2182,7 +2182,7 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST, PUT, DELETE, OPTIONS
       Date:
-      - Thu, 19 Nov 2015 04:15:31 GMT
+      - Thu, 19 Nov 2015 06:07:49 GMT
       Content-Length:
       - '4371'
     body:
@@ -2287,7 +2287,7 @@ http_interactions:
         LCJNb3ZpZUlkIjoiZjU2NTA4OTAtOTViNi00NTA1LWE5OGEtN2MxOTQxNTI3
         NWJmIn1d
     http_version: 
-  recorded_at: Thu, 19 Nov 2015 04:15:31 GMT
+  recorded_at: Thu, 19 Nov 2015 06:07:50 GMT
 - request:
     method: get
     uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/11/25&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
@@ -2327,7 +2327,7 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST, PUT, DELETE, OPTIONS
       Date:
-      - Thu, 19 Nov 2015 04:15:31 GMT
+      - Thu, 19 Nov 2015 06:07:49 GMT
       Content-Length:
       - '4379'
     body:
@@ -2432,7 +2432,7 @@ http_interactions:
         IjpudWxsfV0sIk1vdmllSWQiOiJmNTY1MDg5MC05NWI2LTQ1MDUtYTk4YS03
         YzE5NDE1Mjc1YmYifV0=
     http_version: 
-  recorded_at: Thu, 19 Nov 2015 04:15:32 GMT
+  recorded_at: Thu, 19 Nov 2015 06:07:50 GMT
 - request:
     method: get
     uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/11/26&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
@@ -2472,7 +2472,7 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST, PUT, DELETE, OPTIONS
       Date:
-      - Thu, 19 Nov 2015 04:15:31 GMT
+      - Thu, 19 Nov 2015 06:07:49 GMT
       Content-Length:
       - '4371'
     body:
@@ -2577,7 +2577,7 @@ http_interactions:
         LCJNb3ZpZUlkIjoiZjU2NTA4OTAtOTViNi00NTA1LWE5OGEtN2MxOTQxNTI3
         NWJmIn1d
     http_version: 
-  recorded_at: Thu, 19 Nov 2015 04:15:32 GMT
+  recorded_at: Thu, 19 Nov 2015 06:07:50 GMT
 - request:
     method: get
     uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/12/17&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
@@ -2617,7 +2617,7 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST, PUT, DELETE, OPTIONS
       Date:
-      - Thu, 19 Nov 2015 04:15:31 GMT
+      - Thu, 19 Nov 2015 06:07:49 GMT
       Content-Length:
       - '1308'
     body:
@@ -2654,7 +2654,7 @@ http_interactions:
         b3ZpZUlkIjoiNTQwMTc5MGEtYjNkOC00NDA1LThiN2EtYTY2OWRkNjkwNmUz
         In1d
     http_version: 
-  recorded_at: Thu, 19 Nov 2015 04:15:32 GMT
+  recorded_at: Thu, 19 Nov 2015 06:07:50 GMT
 - request:
     method: get
     uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/12/18&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
@@ -2694,7 +2694,7 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST, PUT, DELETE, OPTIONS
       Date:
-      - Thu, 19 Nov 2015 04:15:31 GMT
+      - Thu, 19 Nov 2015 06:07:49 GMT
       Content-Length:
       - '1308'
     body:
@@ -2731,7 +2731,7 @@ http_interactions:
         b3ZpZUlkIjoiNTQwMTc5MGEtYjNkOC00NDA1LThiN2EtYTY2OWRkNjkwNmUz
         In1d
     http_version: 
-  recorded_at: Thu, 19 Nov 2015 04:15:32 GMT
+  recorded_at: Thu, 19 Nov 2015 06:07:50 GMT
 - request:
     method: get
     uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/12/19&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
@@ -2771,7 +2771,7 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST, PUT, DELETE, OPTIONS
       Date:
-      - Thu, 19 Nov 2015 04:15:31 GMT
+      - Thu, 19 Nov 2015 06:07:49 GMT
       Content-Length:
       - '1308'
     body:
@@ -2808,7 +2808,7 @@ http_interactions:
         b3ZpZUlkIjoiNTQwMTc5MGEtYjNkOC00NDA1LThiN2EtYTY2OWRkNjkwNmUz
         In1d
     http_version: 
-  recorded_at: Thu, 19 Nov 2015 04:15:32 GMT
+  recorded_at: Thu, 19 Nov 2015 06:07:50 GMT
 - request:
     method: get
     uri: http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?showingDate=2015/12/20&theaterId=5c2d4697-7f54-4955-800c-7b3ad782582c
@@ -2848,7 +2848,7 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST, PUT, DELETE, OPTIONS
       Date:
-      - Thu, 19 Nov 2015 04:15:31 GMT
+      - Thu, 19 Nov 2015 06:07:49 GMT
       Content-Length:
       - '1308'
     body:
@@ -2885,5 +2885,5 @@ http_interactions:
         b3ZpZUlkIjoiNTQwMTc5MGEtYjNkOC00NDA1LThiN2EtYTY2OWRkNjkwNmUz
         In1d
     http_version: 
-  recorded_at: Thu, 19 Nov 2015 04:15:32 GMT
+  recorded_at: Thu, 19 Nov 2015 06:07:50 GMT
 recorded_with: VCR 2.9.3
