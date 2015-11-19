@@ -4,30 +4,36 @@ module AmbassadorScrape
   AMBASSADOR_THEATER_ID_XPATH = "//*[@class='list-group sidebar-nav-v1']//li//a"
   AMBASSADOR_TIME_API = 'http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetScreeningDateListForTheater/?'
   AMBASSADOR_FILM_API = 'http://cinemaservice.ambassador.com.tw/ambassadorsite.webapi/api/Movies/GetShowtimeListForTheater/?'
+  PICK_LANGUAGE = { 'chinese' => 'Name', 'english' => 'ForeignName' }
+  PERIOD_SHOW_TIME = 'PeriodShowtime'
+  SHOW_TIMES = 'Showtimes'
 
-  def fetch_movie_info(theater_id, date_list)
+  def fetch_movie_info(theater_id, date_list, language)
+    language = PICK_LANGUAGE[language]
     movie_info = Hash.new { |hash, key| hash[key] = {} }
     date_list.map do |date|
       url = "#{AMBASSADOR_FILM_API}theaterId=#{theater_id}&showingDate=#{date}"
-      # concurrent_retrieve_info(url, date, movie_info)
-      JSON.parse(Nokogiri::HTML(open(url)).text).map do |movie|
-        name = movie['ForeignName']
-        time = movie['PeriodShowtime'].first['Showtimes']
+      JSON.parse(open(url).read).map do |movie|
+        name, time = *name_time(movie, language)
         movie_info[name][date] = time
-      end
-    end # .map(&:execute).map(&:value)
+      end; end # .map(&:execute).map(&:value)
     movie_info # .sort.to_h
   end
 
-  def concurrent_retrieve_info(url, date, movie_info)
-    Concurrent::Future.new do
-      JSON.parse(Nokogiri::HTML(open(url)).text).map do |movie|
-        name = movie['ForeignName']
-        time = movie['PeriodShowtime'].first['Showtimes']
-        movie_info[name][date] = time
-      end
-    end
+  def name_time(movie, language)
+    movie = movie
+    [movie[language], movie[PERIOD_SHOW_TIME].first[SHOW_TIMES]]
   end
+
+  # def concurrent_retrieve_info(url, date, movie_info)
+  #   Concurrent::Future.new do
+  #     JSON.parse(Nokogiri::HTML(open(url)).text).map do |movie|
+  #       name = movie['ForeignName']
+  #       time = movie['PeriodShowtime'].first['Showtimes']
+  #       movie_info[name][date] = time
+  #     end
+  #   end
+  # end
 
   def fetch_theater_date(theater_id)
     url = "#{AMBASSADOR_TIME_API}theaterId=#{theater_id}"

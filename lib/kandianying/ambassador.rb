@@ -13,14 +13,15 @@ module Ambassador
     include AmbassadorScrape, Search
     attr_reader :movie_table, :theater_id_table, :cinema_name
 
-    def initialize(id)
+    def initialize(id, language)
       @movie_table = {}
       @theater_id_table = fetch_theater_id_table(AMBASSADOR_THEATER_ID_URL)
       theater_id_table.each do |theater_id, theater_name|
         next unless theater_id.include? id
         date_list = fetch_theater_date(theater_id)
         @cinema_name = theater_name
-        @movie_table[theater_name] = fetch_movie_info(theater_id, date_list)
+        @movie_table[theater_name] = fetch_movie_info(theater_id, date_list,
+                                                      language)
       end
     end
 

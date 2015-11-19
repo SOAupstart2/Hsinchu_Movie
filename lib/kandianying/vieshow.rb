@@ -7,20 +7,20 @@ require_relative './search'
 # Scraper for VieShow
 module VieShow
   INITIALIZE_ERROR = 'id out of range'
+  LANGUAGE_ERROR = 'language must be one of \'english\' or \'chinese\''
 
   # Class for Vieshow films
   class Vieshow
     include VieshowScrape, Search
     # initialize movie_table with ID
-    def initialize(vis_cinema_id)
+    def initialize(vis_cinema_id, langauge)
       vis_cinema_id = vis_cinema_id.to_s
       vis_cinema_id = "0#{vis_cinema_id}" if vis_cinema_id.length == 1
       fail INITIALIZE_ERROR unless VIESHOW_CINEMA_CODES.include? vis_cinema_id
-      doc = visit_vieshow(vis_cinema_id)
-      @table = doc.xpath(VIESHOW_FULL_XPATH)
-      @cinema_name = doc.xpath(VIESHOW_CINEMA_NAME_XPATH).text
-      @movie_table = Hash.new { |hash, key| hash[key] = [] }
-      make_movie_table
+      fail LANGUAGE_ERROR unless PICK_LANGUAGE.keys.include? langauge
+      doc = visit_vieshow(vis_cinema_id, langauge)
+      @table, @cinema_name = initiatilize_table_cinema_name(doc)
+      make_movie_table(langauge)
       @movie_table = { @cinema_name => @movie_table }
     end
 
