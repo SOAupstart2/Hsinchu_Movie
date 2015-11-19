@@ -1,4 +1,7 @@
 #!/usr/bin/env ruby
+
+# This is deprecated!
+
 require_relative '../lib/kandianying'
 VIESHOW_CODES = ('1'..'14').to_a.map { |e| e.length == 1 ? "0#{e}" : e }
 ID_OUT_OUT_RANGE = 'Please use a cinema code between \'1\' and \'14\' inclusive'
@@ -6,7 +9,7 @@ ID_OUT_OUT_RANGE = 'Please use a cinema code between \'1\' and \'14\' inclusive'
 if ARGV[0] == 'vieshow'
   ARGV[1] = "0#{ARGV[1]}" if ARGV[1].length == 1
   if VIESHOW_CODES.include? ARGV[1]
-    cinema = HsinChuMovie::Vieshow.new(ARGV[1])
+    cinema = HsinChuMovie::Vieshow.new(ARGV[1], 'english')
     cinema.movie_table.each do |cinema_name, movies|
       puts cinema_name
       movies.each do |movie, date_times|

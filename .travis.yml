@@ -3,12 +3,6 @@ rvm:
   - ruby-head
   - 2.2.3
   - 2.1.0
-  - 1.9.3
-  - jruby-head
-matrix:
-  allow_failures:
-    - rvm: jruby-head
-    - rvm: 1.9.3
 notifications:
   slack: soa-2015:kyVe3CqcC9MHxQdS3y4SyD07
 # uncomment this line if your project needs to run something other than `rake`:
